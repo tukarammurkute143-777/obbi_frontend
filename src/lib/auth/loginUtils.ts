@@ -5,6 +5,7 @@ export interface AuthUser {
   loginType: "mobile" | "google";
   role?: "customer" | "owner";
   location?: string;
+  isNewUser?: boolean;
   loginTime: string;
 }
 
@@ -202,11 +203,11 @@ function isKnownIdentifier(identifier: string): boolean {
 
 const LAST_TRIP_KEY = "obbi_last_trip";
 
-export function getLastTrip(): { route: string } | null {
+export function getLastTrip(): { route: string; date?: string } | null {
   if (typeof window === "undefined") return null;
   try {
     const raw = window.localStorage.getItem(LAST_TRIP_KEY);
-    return raw ? (JSON.parse(raw) as { route: string }) : null;
+    return raw ? (JSON.parse(raw) as { route: string; date?: string }) : null;
   } catch {
     return null;
   }
@@ -246,6 +247,8 @@ export async function verifyOTP(
       mobile,
       loginType: "mobile",
       role: "customer",
+      location: "Pune",
+      isNewUser,
       loginTime: new Date().toISOString(),
     },
     isNewUser,
@@ -266,6 +269,8 @@ export async function googleLogin(): Promise<GoogleLoginResponse> {
       email,
       loginType: "google",
       role: "customer",
+      location: "Pune",
+      isNewUser,
       loginTime: new Date().toISOString(),
     },
     isNewUser,

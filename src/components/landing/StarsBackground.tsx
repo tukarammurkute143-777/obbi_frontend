@@ -15,23 +15,26 @@ function seededRandom(seed: number) {
 interface StarsBackgroundProps {
   starCount?: number;
   particleCount?: number;
+  /** Confine stars to the top N% of the container (default: full height). */
+  starVerticalExtent?: number;
 }
 
 export default function StarsBackground({
   starCount = 140,
   particleCount = 18,
+  starVerticalExtent = 100,
 }: StarsBackgroundProps) {
   const stars = useMemo(() => {
     const rand = seededRandom(42);
     return Array.from({ length: starCount }, (_, i) => ({
       id: i,
       left: rand() * 100,
-      top: rand() * 100,
+      top: rand() * starVerticalExtent,
       size: rand() * 1.8 + 0.6,
       duration: rand() * 3 + 2,
       delay: rand() * 4,
     }));
-  }, [starCount]);
+  }, [starCount, starVerticalExtent]);
 
   const particles = useMemo(() => {
     const rand = seededRandom(1337);

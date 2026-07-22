@@ -33,7 +33,7 @@ export default function LoginPage() {
   const redirectPathRef = useRef("/portal");
 
   const completeLogin = (user: AuthUser, isNewUser: boolean) => {
-    login(user);
+    login({ ...user, isNewUser });
     redirectPathRef.current = determineRedirectPath(user, isNewUser);
     setStep("success");
     setTimeout(() => {
