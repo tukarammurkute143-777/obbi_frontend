@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, Flag, MapPin } from "lucide-react";
 import type { AuthUser } from "@/lib/auth/loginUtils";
@@ -29,10 +29,11 @@ function buildGreeting(user: AuthUser, lastTripRoute: string | null): string {
 
 export default function SearchSection({ user }: SearchSectionProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const lastTrip = getLastTrip();
 
   const [from, setFrom] = useState(user.location ?? "Pune");
-  const [to, setTo] = useState("");
+  const [to, setTo] = useState(() => searchParams.get("to") ?? "");
   const [date, setDate] = useState(todayISO());
   const [notice, setNotice] = useState("");
 

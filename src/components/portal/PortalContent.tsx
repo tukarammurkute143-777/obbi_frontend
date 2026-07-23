@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { motion } from "framer-motion";
 import { useAuth } from "@/hooks/useAuth";
 import PortalBackground from "./PortalBackground";
@@ -34,7 +35,9 @@ export default function PortalContent() {
       </motion.div>
 
       <main className="pb-20">
-        <SearchSection user={user} />
+        <Suspense fallback={null}>
+          <SearchSection user={user} />
+        </Suspense>
         <PopularRoutes />
         <FleetPreview />
         <MyBookings />
