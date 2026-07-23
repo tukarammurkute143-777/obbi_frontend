@@ -34,7 +34,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link
-          href="#home"
+          href="/"
           className="font-display text-2xl font-semibold tracking-wide text-gold-light sm:text-3xl"
         >
           Obbi Cabs

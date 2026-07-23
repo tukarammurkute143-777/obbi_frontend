@@ -83,8 +83,8 @@ export const CONTACT = {
 };
 
 export const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "Fleet", href: "#fleet" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Cities", href: "#cities" },
+  { label: "Home", href: "/#home" },
+  { label: "Fleet", href: "/#fleet" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "Cities", href: "/#cities" },
 ];
