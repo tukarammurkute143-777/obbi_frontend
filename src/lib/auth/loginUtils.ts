@@ -1,3 +1,5 @@
+import { api } from "@/lib/api";
+
 export interface AuthUser {
   name: string;
   mobile?: string;
@@ -177,6 +179,26 @@ export function getSession(): AuthUser | null {
 export function clearSession(): void {
   if (typeof window === "undefined") return;
   window.localStorage.removeItem(SESSION_KEY);
+  clearToken();
+}
+
+// ── Auth token (issued by the backend on OTP verification) ──
+
+const TOKEN_KEY = "obbi_token";
+
+export function setToken(token: string): void {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(TOKEN_KEY, token);
+}
+
+export function getToken(): string | null {
+  if (typeof window === "undefined") return null;
+  return window.localStorage.getItem(TOKEN_KEY);
+}
+
+export function clearToken(): void {
+  if (typeof window === "undefined") return;
+  window.localStorage.removeItem(TOKEN_KEY);
 }
 
 // ── Known-users mock (used only to decide new vs. returning in the demo) ──
@@ -213,17 +235,19 @@ export function getLastTrip(): { route: string; date?: string } | null {
   }
 }
 
-// ── Mock API calls (real backend to follow) ──
-
-function delay(ms: number): Promise<void> {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+// ── Live API calls ──
 
 export async function sendOTP(mobile: string): Promise<SendOTPResponse> {
-  await delay(900);
+  const result = await api.sendOTP(mobile);
+
   return {
-    success: true,
-    message: `OTP sent on WhatsApp to +91 ${mobile}`,
+    success: result.success,
+    message:
+      typeof result.message === "string"
+        ? result.message
+        : result.success
+          ? `OTP sent on WhatsApp to +91 ${mobile}`
+          : ERROR_MESSAGES.otpSendFailed,
   };
 }
 
@@ -231,28 +255,59 @@ export async function verifyOTP(
   mobile: string,
   otp: string
 ): Promise<VerifyOTPResponse> {
-  await delay(900);
+  const result = await api.verifyOTP(mobile, otp);
 
-  if (otp.length !== 6) {
-    return { success: false, message: ERROR_MESSAGES.wrongOTP };
+  if (!result.success) {
+    return {
+      success: false,
+      message: typeof result.message === "string" ? result.message : ERROR_MESSAGES.wrongOTP,
+    };
   }
 
-  const isNewUser = !isKnownIdentifier(mobile);
+  // The backend does not declare a response model for this endpoint, so accept
+  // either casing for the token and user payload and fall back to what we
+  // already know locally.
+  const token =
+    typeof result.token === "string"
+      ? result.token
+      : typeof result.access_token === "string"
+        ? result.access_token
+        : undefined;
+
+  if (token) {
+    setToken(token);
+  }
+
+  const payload = (result.user ?? {}) as Partial<AuthUser> & { is_new_user?: boolean };
+
+  const isNewUser =
+    typeof result.isNewUser === "boolean"
+      ? result.isNewUser
+      : typeof result.is_new_user === "boolean"
+        ? result.is_new_user
+        : !isKnownIdentifier(mobile);
 
   return {
     success: true,
-    token: "mock-token",
+    token,
     user: {
-      name: "Rahul",
-      mobile,
+      name: payload.name ?? "Traveller",
+      mobile: payload.mobile ?? mobile,
+      email: payload.email,
       loginType: "mobile",
-      role: "customer",
-      location: "Pune",
+      role: payload.role ?? "customer",
+      location: payload.location,
       isNewUser,
       loginTime: new Date().toISOString(),
     },
     isNewUser,
   };
+}
+
+// NOTE: still mocked — the backend has no /api/auth/google endpoint yet (it
+// returns 404). Swap this for `api.googleLogin(idToken)` once it ships.
+function delay(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export async function googleLogin(): Promise<GoogleLoginResponse> {
