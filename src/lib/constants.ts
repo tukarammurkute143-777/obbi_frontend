@@ -84,6 +84,7 @@ export const CONTACT = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/#home" },
+  { label: "Routes", href: "/routes" },
   { label: "Fleet", href: "/#fleet" },
   { label: "Reviews", href: "/#reviews" },
   { label: "Cities", href: "/#cities" },
