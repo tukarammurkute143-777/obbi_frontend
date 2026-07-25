@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import DashboardContent from "@/components/dashboard/DashboardContent";
 
 export const metadata: Metadata = {
-  title: "Owner Dashboard — Obbi Cabs",
+  title: "Owner Dashboard — Obii Cabs",
   description: "Private owner dashboard",
   robots: {
     index: false,

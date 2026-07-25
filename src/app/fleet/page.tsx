@@ -6,7 +6,7 @@ import FleetContent from "@/components/fleet/FleetContent";
 import FleetCTA from "@/components/fleet/FleetCTA";
 
 export const metadata: Metadata = {
-  title: "Our Fleet — Obbi Cabs | 4 to 50 Seater Cabs in Maharashtra",
+  title: "Our Fleet — Obii Cabs | 4 to 50 Seater Cabs in Maharashtra",
   description:
     "Choose from Dzire, Ertiga, Innova Crysta, Urbania, Mini Bus and Full Bus. Premium cab service in Pune, Mumbai, Nashik, Shirdi.",
   keywords: [

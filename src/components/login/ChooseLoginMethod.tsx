@@ -22,7 +22,7 @@ export default function ChooseLoginMethod({
   return (
     <div className="flex flex-col items-center text-center">
       <span className="font-display text-3xl font-semibold text-gold-light">
-        🚗 Obbi Cabs
+        🚗 Obii Cabs
       </span>
       <p className="mt-2 font-display text-lg text-text">
         एक login, अनंत प्रवास!

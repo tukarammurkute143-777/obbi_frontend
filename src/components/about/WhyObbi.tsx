@@ -12,7 +12,7 @@ export default function WhyObbi() {
             WHY CHOOSE US
           </span>
           <h2 className="font-display text-4xl font-semibold text-text sm:text-5xl">
-            Kyun Chunein Obbi Cabs?
+            Kyun Chunein Obii Cabs?
           </h2>
         </div>
 

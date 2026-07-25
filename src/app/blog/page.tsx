@@ -5,9 +5,9 @@ import BlogHero from "@/components/blog/BlogHero";
 import BlogGrid from "@/components/blog/BlogGrid";
 
 export const metadata: Metadata = {
-  title: "Travel Blog — Obbi Cabs | Maharashtra Trip Guides & Tips",
+  title: "Travel Blog — Obii Cabs | Maharashtra Trip Guides & Tips",
   description:
-    "Maharashtra travel guides, cab tips, route guides, and pilgrimage information. Plan your perfect Maharashtra trip with Obbi Cabs blog.",
+    "Maharashtra travel guides, cab tips, route guides, and pilgrimage information. Plan your perfect Maharashtra trip with Obii Cabs blog.",
   keywords: [
     "maharashtra travel blog",
     "pune shirdi guide",

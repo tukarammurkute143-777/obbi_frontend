@@ -21,7 +21,7 @@ export default function DashboardNavbar() {
     <header className="sticky top-0 z-40 border-b border-border bg-dark/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-5 py-3 sm:px-8">
         <span className="whitespace-nowrap font-display text-lg font-semibold text-gold-light sm:text-xl">
-          👑 Obbi Cabs — Owner Dashboard
+          👑 Obii Cabs — Owner Dashboard
         </span>
 
         <div className="flex shrink-0 items-center gap-3">

@@ -52,7 +52,7 @@ For a family of 4-5, **Innova Crysta** is the most popular choice. It offers pre
 - Darshan can take 2-4 hours during peak times
 
 ## Book Your Cab
-Obbi Cabs provides comfortable Innova Crysta, Ertiga, and Dzire for Pune to Shirdi route. Call us for best rates!
+Obii Cabs provides comfortable Innova Crysta, Ertiga, and Dzire for Pune to Shirdi route. Call us for best rates!
     `,
   },
   {
@@ -60,7 +60,7 @@ Obbi Cabs provides comfortable Innova Crysta, Ertiga, and Dzire for Pune to Shir
     slug: "best-time-to-visit-mahabaleshwar",
     title: "Best Time to Visit Mahabaleshwar from Pune",
     excerpt:
-      "Mahabaleshwar is Maharashtra's most popular hill station. Discover the best season, top attractions, and why Obbi Cabs is the perfect choice for your trip.",
+      "Mahabaleshwar is Maharashtra's most popular hill station. Discover the best season, top attractions, and why Obii Cabs is the perfect choice for your trip.",
     category: "Hill Stations",
     emoji: "⛰️",
     readTime: 6,
@@ -165,7 +165,7 @@ Ertiga or Innova Crysta for families. Dzire for couples.
     slug: "tips-for-safe-road-trip-maharashtra",
     title: "10 Tips for a Safe Road Trip in Maharashtra",
     excerpt:
-      "Planning a road trip across Maharashtra? Follow these 10 essential tips for a safe, comfortable, and memorable journey with Obbi Cabs.",
+      "Planning a road trip across Maharashtra? Follow these 10 essential tips for a safe, comfortable, and memorable journey with Obii Cabs.",
     category: "Travel Tips",
     emoji: "💡",
     readTime: 5,
@@ -202,7 +202,7 @@ Maharashtra highways have strict speed limit enforcement.
 If possible, reach destination before sunset on unknown routes.
 
 ## 10. Trust Your Cab Service
-Book from trusted providers like Obbi Cabs — professional drivers, clean vehicles.
+Book from trusted providers like Obii Cabs — professional drivers, clean vehicles.
     `,
   },
   {

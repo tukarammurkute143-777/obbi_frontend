@@ -8,14 +8,14 @@ import BusinessHours from "@/components/contact/BusinessHours";
 import ContactCTA from "@/components/contact/ContactCTA";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Obbi Cabs | 24/7 Cab Booking Maharashtra",
+  title: "Contact Us — Obii Cabs | 24/7 Cab Booking Maharashtra",
   description:
-    "Contact Obbi Cabs for cab booking in Maharashtra. Call or WhatsApp anytime. Pune, Mumbai, Nashik, Shirdi, Sambhajinagar routes available 24/7.",
+    "Contact Obii Cabs for cab booking in Maharashtra. Call or WhatsApp anytime. Pune, Mumbai, Nashik, Shirdi, Sambhajinagar routes available 24/7.",
   keywords: [
-    "contact obbi cabs",
+    "contact obii cabs",
     "cab booking pune contact",
     "maharashtra cab number",
-    "obbi cabs phone",
+    "obii cabs phone",
   ],
 };
 

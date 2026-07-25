@@ -32,7 +32,7 @@ export default function FloatingButtons() {
       </motion.a>
       <motion.a
         href={`tel:${toDialNumber(CONTACT.phone)}`}
-        aria-label="Call Obbi Cabs"
+        aria-label="Call Obii Cabs"
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
         className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-gold-light to-gold-dark text-dark shadow-[0_0_20px_rgba(201,168,76,0.45)] transition-shadow hover:shadow-[0_0_28px_rgba(201,168,76,0.75)] sm:h-14 sm:w-14"

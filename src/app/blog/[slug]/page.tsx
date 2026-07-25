@@ -20,11 +20,11 @@ export async function generateMetadata({
   const post = BLOG_POSTS.find((p) => p.slug === slug);
 
   if (!post) {
-    return { title: "Post Not Found — Obbi Cabs Blog" };
+    return { title: "Post Not Found — Obii Cabs Blog" };
   }
 
   return {
-    title: `${post.title} — Obbi Cabs Blog`,
+    title: `${post.title} — Obii Cabs Blog`,
     description: post.excerpt,
   };
 }

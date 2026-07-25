@@ -36,7 +36,7 @@ function toDialNumber(phone: string): string {
 
 function toWhatsappHref(phone: string, vehicleName: string): string {
   const number = phone.replace(/[^\d]/g, "");
-  const message = `Namaste Obbi Cabs! 🙏 ${vehicleName} ke liye rates batao please.`;
+  const message = `Namaste Obii Cabs! 🙏 ${vehicleName} ke liye rates batao please.`;
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 

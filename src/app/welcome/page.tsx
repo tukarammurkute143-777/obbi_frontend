@@ -51,7 +51,7 @@ export default function WelcomePage() {
           Namaste {user.name}! 🙏
         </h1>
         <p className="mt-4 font-body text-lg text-gold-light">
-          Obbi Cabs mein aapka swagat hai!
+          Obii Cabs mein aapka swagat hai!
         </p>
         <p className="mt-2 font-body text-base text-text-muted">
           Maharashtra ki best cab service ab aapki muthi mein! 🚗

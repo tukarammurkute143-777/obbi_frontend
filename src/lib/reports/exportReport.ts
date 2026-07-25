@@ -16,7 +16,7 @@ function todayFileDate(): string {
 }
 
 function reportFileName(period: string, extension: "pdf" | "png"): string {
-  return `OBBICabs-Report-${fileSlug(period)}-${todayFileDate()}.${extension}`;
+  return `OBIICabs-Report-${fileSlug(period)}-${todayFileDate()}.${extension}`;
 }
 
 async function captureReport(): Promise<HTMLCanvasElement> {
@@ -69,7 +69,7 @@ export function buildWhatsAppSummary(period: string, data: ReportData): string {
   const inr = (value: number) => `₹${value.toLocaleString("en-IN")}`;
 
   return [
-    "*Obbi Cabs — Business Report*",
+    "*Obii Cabs — Business Report*",
     `Period: ${period}`,
     `Generated: ${data.generated}`,
     "",

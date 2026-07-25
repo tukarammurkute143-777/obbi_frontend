@@ -45,7 +45,7 @@ export default function AboutHero() {
           variants={item}
           className="mb-6 rounded-full border border-border bg-glass px-4 py-1.5 font-body text-xs tracking-wide text-gold-light sm:text-sm"
         >
-          ABOUT OBBI CABS ✦
+          ABOUT OBII CABS ✦
         </motion.span>
 
         <motion.h1

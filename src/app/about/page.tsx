@@ -9,11 +9,11 @@ import OurPromise from "@/components/about/OurPromise";
 import AboutReviews from "@/components/about/AboutReviews";
 
 export const metadata: Metadata = {
-  title: "About Us — Obbi Cabs | Best Cab Service Maharashtra Since 2020",
+  title: "About Us — Obii Cabs | Best Cab Service Maharashtra Since 2020",
   description:
-    "Obbi Cabs — One Booking, Infinite Independence. Best cab service in Maharashtra since 2020. 1247+ happy customers, 4.8 rating, 120+ routes.",
+    "Obii Cabs — One Booking, Infinite Independence. Best cab service in Maharashtra since 2020. 1247+ happy customers, 4.8 rating, 120+ routes.",
   keywords: [
-    "about obbi cabs",
+    "about obii cabs",
     "best cab service pune",
     "maharashtra cab company",
     "trusted cab service",

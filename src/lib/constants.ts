@@ -78,8 +78,8 @@ export const STATS: Stat[] = [
 export const CONTACT = {
   phone: "+91 7499313125",
   whatsapp: "+91 7499313125",
-  email: "info@obbicabs.com",
-  whatsappMessage: "Namaste Obbi Cabs! 🙏 Mujhe cab booking karni hai. Please contact me.",
+  email: "info@obiicabs.com",
+  whatsappMessage: "Namaste Obii Cabs! 🙏 Mujhe cab booking karni hai. Please contact me.",
 };
 
 export const NAV_LINKS = [

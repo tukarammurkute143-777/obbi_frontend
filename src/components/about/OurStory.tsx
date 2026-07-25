@@ -62,19 +62,19 @@ export default function OurStory() {
             OUR STORY
           </span>
           <h2 className="font-display text-4xl font-semibold text-text sm:text-5xl">
-            Obbi Cabs ki Kahani
+            Obii Cabs ki Kahani
           </h2>
 
           <p className="mt-6 font-body text-base leading-relaxed text-text-muted sm:text-lg">
             Ek simple soch se shuru hua yeh safar — &ldquo;Har customer ko
             best travel experience milna chahiye!&rdquo; Maharashtra ke kone
             kone mein log travel karte hai — Shirdi ki yatra ho, Mumbai ka
-            business trip ho, ya Mahabaleshwar ki family trip — Obbi Cabs
+            business trip ho, ya Mahabaleshwar ki family trip — Obii Cabs
             hamesha aapke saath hai!
           </p>
 
           <p className="mt-4 font-body text-base leading-relaxed text-text-muted sm:text-lg">
-            Humara naam Obbi hai — One Booking, Infinite Independence. Ek
+            Humara naam Obii hai — One Booking, Infinite Independence. Ek
             call, ek booking — aur baaki sab humpe! Aapko bas apni manzil
             batani hai — hum aapko safely, comfortably wahan pahunchayenge.
           </p>

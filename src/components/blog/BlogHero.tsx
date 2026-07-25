@@ -40,7 +40,7 @@ export default function BlogHero() {
           variants={item}
           className="font-display text-5xl font-semibold leading-tight text-text sm:text-6xl md:text-7xl"
         >
-          Obbi Cabs
+          Obii Cabs
           <br />
           <span className="italic text-gold-light">Travel Stories</span>
         </motion.h1>

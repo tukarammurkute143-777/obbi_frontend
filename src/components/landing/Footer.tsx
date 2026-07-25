@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-5 py-14 sm:px-8 md:flex-row md:items-start md:justify-between">
         <div className="flex flex-col items-center gap-2 text-center md:items-start md:text-left">
           <span className="font-display text-2xl font-semibold text-gold-light">
-            Obbi Cabs
+            Obii Cabs
           </span>
           <span className="font-body text-sm text-text-muted">
             One Booking — Infinite Independence
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-border py-6 text-center font-body text-xs text-text-muted">
-        © 2026 Obbi Cabs. All rights reserved.
+        © 2026 Obii Cabs. All rights reserved.
       </div>
     </footer>
   );

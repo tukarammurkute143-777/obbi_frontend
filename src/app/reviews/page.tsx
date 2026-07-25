@@ -7,11 +7,11 @@ import RatingSummary from "@/components/reviews/RatingSummary";
 import ReviewsCTA from "@/components/reviews/ReviewsCTA";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews — Obbi Cabs | 4.8⭐ Rating | 1247+ Happy Customers",
+  title: "Customer Reviews — Obii Cabs | 4.8⭐ Rating | 1247+ Happy Customers",
   description:
-    "Read genuine reviews from 1247+ happy customers. Obbi Cabs — best cab service in Maharashtra. Pune, Mumbai, Nashik, Shirdi routes.",
+    "Read genuine reviews from 1247+ happy customers. Obii Cabs — best cab service in Maharashtra. Pune, Mumbai, Nashik, Shirdi routes.",
   keywords: [
-    "obbi cabs reviews",
+    "obii cabs reviews",
     "cab service pune reviews",
     "shirdi cab reviews",
     "maharashtra cab reviews",

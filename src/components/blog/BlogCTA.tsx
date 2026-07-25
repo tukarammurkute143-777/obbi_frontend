@@ -20,7 +20,7 @@ export default function BlogCTA() {
       <p className="mt-2 font-display text-xl text-text sm:text-2xl">
         Is route pe cab chahiye?
         <br />
-        Obbi Cabs se book karo!
+        Obii Cabs se book karo!
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">

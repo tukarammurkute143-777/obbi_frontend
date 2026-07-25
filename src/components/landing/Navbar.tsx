@@ -37,7 +37,7 @@ export default function Navbar() {
           href="/"
           className="font-display text-2xl font-semibold tracking-wide text-gold-light sm:text-3xl"
         >
-          Obbi Cabs
+          Obii Cabs
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

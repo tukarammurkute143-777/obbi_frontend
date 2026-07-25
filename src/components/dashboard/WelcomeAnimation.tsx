@@ -192,7 +192,7 @@ export default function WelcomeAnimation({ onComplete }: WelcomeAnimationProps) 
             transition={{ duration: 0.8 }}
             className="font-display text-5xl font-semibold text-gold-light sm:text-6xl"
           >
-            Obbi Cabs
+            Obii Cabs
           </motion.h1>
           <motion.div
             initial={{ width: 0 }}

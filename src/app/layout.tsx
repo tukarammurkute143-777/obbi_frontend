@@ -18,31 +18,31 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://obbicabs.com";
+const siteUrl = "https://obiicabs.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Obbi Cabs — Best Cab Service in Maharashtra | Pune Mumbai Nashik Shirdi",
+  title: "Obii Cabs — Best Cab Service in Maharashtra | Pune Mumbai Nashik Shirdi",
   description:
     "Book premium cabs in Maharashtra. Pune to Shirdi, Mumbai, Nashik, Sambhajinagar. 4 seater to 50 seater. 1247+ happy customers. 4.8 rating.",
   keywords: [
     "cab service pune",
     "pune to shirdi cab",
     "maharashtra cab booking",
-    "obbi cabs",
+    "obii cabs",
     "tourist cab pune",
   ],
   openGraph: {
-    title: "Obbi Cabs — एक login, अनंत प्रवास!",
+    title: "Obii Cabs — एक login, अनंत प्रवास!",
     description: "Maharashtra ki best cab service",
     type: "website",
     url: siteUrl,
-    siteName: "Obbi Cabs",
+    siteName: "Obii Cabs",
     locale: "en_IN",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Obbi Cabs — एक login, अनंत प्रवास!",
+    title: "Obii Cabs — एक login, अनंत प्रवास!",
     description: "Maharashtra ki best cab service",
   },
   robots: {

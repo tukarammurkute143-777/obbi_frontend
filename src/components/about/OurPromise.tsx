@@ -68,7 +68,7 @@ export default function OurPromise() {
         </motion.p>
 
         <p className="mt-6 font-body text-sm text-text-muted">
-          — Obbi Cabs Team 🙏
+          — Obii Cabs Team 🙏
         </p>
 
         <div className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row">

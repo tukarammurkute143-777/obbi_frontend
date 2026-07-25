@@ -48,7 +48,7 @@ export default function PortalNavbar({ user, onLogout }: PortalNavbarProps) {
           href="/portal"
           className="shrink-0 font-display text-2xl font-semibold tracking-wide text-gold-light"
         >
-          Obbi Cabs
+          Obii Cabs
         </Link>
 
         <form

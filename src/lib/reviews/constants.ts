@@ -92,7 +92,7 @@ export const REVIEWS: Review[] = [
     id: 8,
     name: "Anita D.",
     rating: 5,
-    text: "Second time booking with Obbi Cabs. Consistent quality every time. The Innova Crysta is always spotless!",
+    text: "Second time booking with Obii Cabs. Consistent quality every time. The Innova Crysta is always spotless!",
     route: "Pune → Shirdi",
     vehicle: "Innova Crysta",
     date: "2026-07-12",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ReportsContent from "@/components/dashboard/reports/ReportsContent";
 
 export const metadata: Metadata = {
-  title: "Reports — Obbi Cabs Dashboard",
+  title: "Reports — Obii Cabs Dashboard",
   description: "Business report generation",
   robots: {
     index: false,
