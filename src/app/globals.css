@@ -14,6 +14,12 @@
   --color-green: #22c55e;
   --color-red: #ef4444;
   --color-orange: #f97316;
+
+  --color-report-bg: #ffffff;
+  --color-report-text: #1a1a1a;
+  --color-report-gold: #c9a84c;
+  --color-report-border: #e5e7eb;
+  --color-report-light: #f9fafb;
 }
 
 @theme inline {
@@ -30,6 +36,12 @@
   --color-green: var(--color-green);
   --color-red: var(--color-red);
   --color-orange: var(--color-orange);
+
+  --color-report-bg: var(--color-report-bg);
+  --color-report-text: var(--color-report-text);
+  --color-report-gold: var(--color-report-gold);
+  --color-report-border: var(--color-report-border);
+  --color-report-light: var(--color-report-light);
 
   --font-display: var(--font-cormorant), serif;
   --font-body: var(--font-inter), sans-serif;
