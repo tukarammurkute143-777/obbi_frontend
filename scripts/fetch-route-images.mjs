@@ -1,11 +1,8 @@
 // Picks one Unsplash photo per destination and saves it (with the photographer
 // credit Unsplash requires) to src/lib/routes/unsplashManifest.json, so pages
-// and builds never need the live API. A photo is only accepted if its own text
-// (description, tags or location) names the place; otherwise the destination is
-// left to the generic photo for its category, or the local fallback image.
-//
-// Most small pilgrimage towns have few or no photos on Unsplash, so expect many
-// destinations to end up with the category photo.
+// and builds never need the live API. Searches use broad, theme-level queries
+// (see SEARCH below) because small Indian places are rarely named in photo text,
+// and the first result is accepted.
 //
 //   node scripts/fetch-route-images.mjs
 //
@@ -57,6 +54,38 @@ const GENERIC = {
   airport: "airport terminal travel India",
 };
 
+// Broad search queries per destination name. The manifest is still keyed by the
+// destination's own query in destinations.ts, which is what the pages look up.
+// Destinations not listed here search with their own query.
+const SEARCH = {
+  Shirdi: "Sai Baba temple India",
+  Trimbakeshwar: "Shiva temple Maharashtra India",
+  Bhimashankar: "jungle temple Maharashtra",
+  Pandharpur: "Vitthal temple India pilgrimage",
+  Akkalkot: "Hindu temple Maharashtra",
+  Tuljapur: "Goddess temple Maharashtra India",
+  Mahur: "temple Maharashtra hills",
+  Jejuri: "Khandoba temple Maharashtra",
+  Alandi: "Sant temple Pune Maharashtra",
+  Ganpatipule: "Ganesh temple beach Maharashtra",
+  "Ashtavinayak Darshan": "Ganesh temple Maharashtra",
+  "Shani Shingnapur": "temple village Maharashtra",
+  Nashik: "Godavari river ghats India",
+  Panchgani: "hill station Maharashtra valley",
+  Lonavala: "monsoon waterfall Maharashtra",
+  Lavasa: "planned city Maharashtra hills",
+  Matheran: "hill station Maharashtra forest",
+  Igatpuri: "Maharashtra hills green",
+  Bhandardara: "lake dam Maharashtra",
+  Alibaug: "beach Maharashtra coast",
+  Ratnagiri: "Konkan coast Maharashtra",
+  Sindhudurg: "sea fort Maharashtra",
+  Tarkarli: "clear water beach Maharashtra",
+  Sambhajinagar: "Bibi Ka Maqbara India",
+  Nagpur: "orange city Maharashtra",
+  Solapur: "Maharashtra city",
+};
+
 const key = loadKey();
 if (!key) {
   console.error("No Unsplash key found (UNSPLASH_ACCESS_KEY or .env.local).");
@@ -65,10 +94,11 @@ if (!key) {
 
 const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, "utf8")) : {};
 const todo = [
-  ...loadDestinations().map((d) => ({ ...d, generic: false })),
+  ...loadDestinations().map((d) => ({ ...d, search: SEARCH[d.name] ?? d.query, generic: false })),
   ...Object.entries(GENERIC).map(([category, query]) => ({
     name: `generic:${category}`,
     query,
+    search: query,
     key: `generic:${category}`,
     generic: true,
   })),
@@ -79,14 +109,14 @@ let remaining = Infinity;
 let added = 0;
 const missing = [];
 
-for (const { name, query, generic, key: manifestKey } of todo) {
+for (const { name, query, search, key: manifestKey } of todo) {
   if (remaining <= 2) {
     console.log("Stopping before the hourly rate limit. Run again in an hour.");
     break;
   }
   const url =
     "https://api.unsplash.com/search/photos?" +
-    new URLSearchParams({ query, orientation: "landscape", per_page: "10", content_filter: "high" });
+    new URLSearchParams({ query: search, orientation: "landscape", per_page: "10", content_filter: "high" });
   const res = await fetch(url, { headers: { Authorization: `Client-ID ${key}`, "Accept-Version": "v1" } });
   remaining = Number(res.headers.get("x-ratelimit-remaining") ?? remaining);
   if (!res.ok) {
@@ -95,17 +125,11 @@ for (const { name, query, generic, key: manifestKey } of todo) {
   }
   const { results = [] } = await res.json();
 
-  // Destination photos must name the place; the category photo is the top result.
-  const token = name.split(/\s+/)[0].toLowerCase();
-  const text = (p) =>
-    [p.alt_description, p.description, p.location?.name, p.location?.city, ...(p.tags ?? []).map((t) => t.title)]
-      .filter(Boolean)
-      .join(" ")
-      .toLowerCase();
-  const photo = generic ? results[0] : results.find((p) => text(p).includes(token));
+  // Take the first result; no place-name matching.
+  const photo = results[0];
   if (!photo) {
     missing.push(name);
-    console.log(`  ${name}: no photo mentions "${token}" - will use the local fallback image`);
+    console.log(`  ${name}: no results for "${search}" - will use the local fallback image`);
     continue;
   }
   manifest[manifestKey ?? query] = {
