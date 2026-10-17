@@ -79,14 +79,6 @@
   "pageUrl": "https://pixabay.com/photos/statue-meditation-buddha-gaya-7329573/",
   "query": "India temple"
  },
- "pune-to-jejuri": {
-  "id": 1869236,
-  "file": "/images/routes/pune-to-jejuri.jpg",
-  "alt": "computer, keyboard, typing, electronics, illuminated, keys, laptop, letters, technology, type, monochrome, black and white, close up, keyboard, keyboard, keyboard, keyboard, keyboard, typing, typing, Vasai-Virar, India, Maharashtra",
-  "user": "Pexels",
-  "pageUrl": "https://pixabay.com/photos/computer-keyboard-typing-1869236/",
-  "query": "Khandoba temple Maharashtra"
- },
  "pune-to-alandi": {
   "id": 4111651,
   "file": "/images/routes/pune-to-alandi.jpg",
@@ -258,7 +250,7 @@
  "nashik-to-trimbakeshwar": {
   "id": 3132133,
   "file": "/images/routes/nashik-to-trimbakeshwar.jpg",
-  "alt": "deity, religion, hindu, shiva, statue, spiritual, asia, nature, sculpture, figure, asian, spirituality, hinduism, fernöstlich, emotion, adoration, composing, fantasy, emotions, faith, worship, peace, holy, hope, stone sculpture, clouds, stone figure, culture, meditation, meditate",
+  "alt": "deity, religion, hindu, shiva, statue, spiritual, asia, nature, sculpture, figure, asian, spirituality, hinduism, fernÃ¶stlich, emotion, adoration, composing, fantasy, emotions, faith, worship, peace, holy, hope, stone sculpture, clouds, stone figure, culture, meditation, meditate",
   "user": "Marisa04",
   "pageUrl": "https://pixabay.com/photos/deity-religion-hindu-shiva-statue-3132133/",
   "query": "Trimbakeshwar Shiva temple"
@@ -1094,5 +1086,13 @@
   "user": "sheshagirikm",
   "pageUrl": "https://pixabay.com/photos/sun-nature-scenic-india-forests-365981/",
   "query": "Sahyadri mountains Maharashtra"
+ },
+ "pune-to-jejuri": {
+  "id": 4045702,
+  "file": "/images/routes/pune-to-jejuri.jpg",
+  "alt": "lord, shiva, shiv, hindu, god, statue, mahashivratri, nature, religion, worship, shivratri, temple, deity, sea, sunset, india",
+  "user": "hari_mangayil",
+  "pageUrl": "https://pixabay.com/photos/lord-shiva-shiv-hindu-god-statue-4045702/",
+  "query": "Khandoba temple Maharashtra India pilgrimage"
  }
 }

@@ -58,7 +58,7 @@ const QUERIES = {
   "mumbai-to-tuljapur": "goddess temple Maharashtra",
   "pune-to-mahur": "Renukamata temple hills",
   "pune-to-kolhapur": "Kolhapur Mahalakshmi temple",
-  "pune-to-jejuri": "Khandoba temple Maharashtra",
+  "pune-to-jejuri": "Khandoba temple Maharashtra India pilgrimage",
   "pune-to-alandi": "Alandi Sant Dnyaneshwar",
   "pune-to-dehu": "Sant Tukaram temple",
   "pune-to-ganpatipule": "Ganpatipule Ganesh temple beach",
@@ -212,7 +212,11 @@ const REGION = [
   "sahyadri", "western ghats", "gujarat", "nagpur", "aurangabad", "kolhapur", "satara", "bombay",
 ];
 
+// Photos whose tags name the region but which show something else.
+const BLOCKED = new Set([1869236]); // a keyboard tagged "Maharashtra"
+
 function isRelevant(hit, query, category) {
+  if (BLOCKED.has(hit.id)) return false;
   const tags = hit.tags.toLowerCase();
   if (/ai generated/.test(tags)) return false;
   if (category === "airport" && tags.includes("airport")) return true;
