@@ -5,7 +5,7 @@ import RoutesHero from "@/components/routes/RoutesHero";
 import AllRoutesGrid from "@/components/routes/AllRoutesGrid";
 import type { RouteListItem } from "@/components/routes/types";
 import { ALL_ROUTES } from "@/lib/routes/allRoutes";
-import { fetchRouteImages } from "@/lib/unsplash";
+import { getRouteImage } from "@/lib/imageService";
 
 export const metadata: Metadata = {
   title: "All Routes — Obii Cabs | Pilgrimage, Hill Station, Konkan & City Cab Routes",
@@ -18,22 +18,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RoutesPage() {
-  // Photos come from the saved Unsplash manifest, so this does not call the
-  // Unsplash API for places that already have one.
-  const images = await fetchRouteImages(
-    ALL_ROUTES.map((route) => ({
-      query: route.unsplashQuery,
-      options: {
-        category: route.category,
-        fallback: route.fallbackImage,
-        width: 700,
-        alt: `${route.from} to ${route.to} cab service`,
-      },
-    }))
-  );
-
-  const items: RouteListItem[] = ALL_ROUTES.map((route, i) => ({
+export default function RoutesPage() {
+  const items: RouteListItem[] = ALL_ROUTES.map((route) => ({
     slug: route.slug,
     from: route.from,
     to: route.to,
@@ -41,7 +27,7 @@ export default async function RoutesPage() {
     distance: route.distance,
     duration: route.duration,
     popularFor: route.popularFor,
-    image: images[i],
+    image: getRouteImage(route.slug, route.fallbackImage, `${route.from} to ${route.to} cab service`),
   }));
 
   const placeCount = new Set(ALL_ROUTES.flatMap((r) => [r.from, r.to])).size;

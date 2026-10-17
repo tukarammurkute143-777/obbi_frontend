@@ -7,8 +7,7 @@ interface RelatedRoutesProps {
   title?: string;
 }
 
-// Text-only on purpose: Unsplash requires a visible credit next to every photo
-// it supplies, which does not fit on a thumbnail.
+// Text-only on purpose: a thumbnail has no room for the photo credit line.
 export default function RelatedRoutes({
   routes,
   title = "Related Pilgrimage Routes",

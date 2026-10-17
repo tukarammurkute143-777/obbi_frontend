@@ -2,7 +2,7 @@
 // superlatives, opening hours, ticket prices and visitor numbers: those change
 // or cannot be checked from here, and these pages are public.
 //
-// `query` is the Unsplash search used for the page photo (see lib/unsplash.ts).
+// `query` is the default Pixabay search for the page photo (scripts/fetch-route-images.mjs).
 
 export interface DestinationInfo {
   /** One factual sentence about the place. */

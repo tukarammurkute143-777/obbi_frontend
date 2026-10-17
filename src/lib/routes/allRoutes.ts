@@ -30,7 +30,6 @@ export interface Route {
   category: RouteCategory;
   distance: string;
   duration: string;
-  unsplashQuery: string;
   description: string;
   highlights: string[];
   bestTime: string;
@@ -40,7 +39,7 @@ export interface Route {
   popularFor: string;
   /** True for multi-stop tours (Ashtavinayak, Konkan Darshan). */
   isCircuit: boolean;
-  /** Shown when Unsplash has no suitable photo. */
+  /** Shown when no Pixabay photo was downloaded. */
   fallbackImage: string;
 }
 
@@ -124,7 +123,6 @@ function build(): Route[] {
       category,
       distance,
       duration,
-      unsplashQuery: info.query,
       description:
         legacy?.description ??
         describe(from, to, category, isCircuit, distance, duration, info.blurb),

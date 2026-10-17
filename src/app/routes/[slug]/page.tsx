@@ -22,7 +22,7 @@ import {
 } from "@/lib/routes/allRoutes";
 import { getRouteBySlug as getLegacyRoute, type RouteVehicle } from "@/lib/routes/routesData";
 import { VEHICLES as FLEET } from "@/lib/fleet/constants";
-import { fetchRouteImage } from "@/lib/unsplash";
+import { getRouteImage } from "@/lib/imageService";
 
 interface RoutePageProps {
   params: Promise<{ slug: string }>;
@@ -32,13 +32,8 @@ export async function generateStaticParams() {
   return ALL_ROUTES.map((route) => ({ slug: route.slug }));
 }
 
-function routeImage(route: Route, width: number) {
-  return fetchRouteImage(route.unsplashQuery, {
-    category: route.category,
-    fallback: route.fallbackImage,
-    width,
-    alt: `${route.from} to ${route.to} cab service`,
-  });
+function routeImage(route: Route) {
+  return getRouteImage(route.slug, route.fallbackImage, `${route.from} to ${route.to} cab service`);
 }
 
 // Vehicle cards for routes without hand-written ones. Names come from the real
@@ -66,7 +61,7 @@ export async function generateMetadata({ params }: RoutePageProps): Promise<Meta
   }
 
   const seo = routeSeo(route);
-  const image = await routeImage(route, 1200);
+  const image = routeImage(route);
 
   return {
     title: seo.title,
@@ -94,7 +89,7 @@ export default async function RoutePage({ params }: RoutePageProps) {
 
   // Routes that were written by hand keep their detailed places and reviews.
   const legacy = getLegacyRoute(route.slug);
-  const image = await routeImage(route, 1600);
+  const image = routeImage(route);
   const related = getRelatedPilgrimageRoutes(route);
 
   return (

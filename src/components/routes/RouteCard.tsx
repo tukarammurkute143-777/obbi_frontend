@@ -18,8 +18,6 @@ export default function RouteCard({ route }: { route: RouteListItem }) {
           src={image.url}
           alt={image.alt}
           fill
-          // Unsplash's CDN already resizes to the width in the URL.
-          unoptimized={image.fromUnsplash}
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
@@ -27,7 +25,7 @@ export default function RouteCard({ route }: { route: RouteListItem }) {
         <span className="absolute left-3 top-3 rounded-full border border-gold/40 bg-dark/70 px-2.5 py-1 font-body text-[11px] text-gold-light backdrop-blur-sm">
           {category.emoji} {category.label}
         </span>
-        <PhotoCredit credit={image.credit} className="absolute bottom-2 right-3 z-10 max-w-[85%] text-right" />
+        <PhotoCredit show={image.fromPixabay} className="absolute bottom-2 right-3 z-10 max-w-[85%] text-right" />
       </div>
 
       <div className="flex flex-1 flex-col p-5">

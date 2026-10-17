@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Clock, MapPin, MessageCircle, Phone, Sun } from "lucide-react";
 import type { Route } from "@/lib/routes/allRoutes";
-import type { RouteImage } from "@/lib/unsplash";
+import type { RouteImage } from "@/lib/imageService";
 import { routeWhatsappMessage, telHref, whatsappHref } from "@/lib/contactLinks";
 import PhotoCredit from "./PhotoCredit";
 
@@ -15,22 +15,19 @@ export default function RouteHero({ route, image }: RouteHeroProps) {
     <section className="relative h-[250px] w-full overflow-hidden sm:h-[400px]">
       <Image
         src={image.url}
-        alt={image.fromUnsplash && image.alt ? image.alt : `${route.from} to ${route.to} cab service`}
+        alt={image.alt}
         fill
         // The hero is the LCP element on every route page, so it loads eagerly
         // and is preloaded from the document head.
         preload
-        // Unsplash's CDN already serves the width requested in the URL.
-        unoptimized={image.fromUnsplash}
         sizes="100vw"
         className="object-cover"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/30" />
 
-      {/* Required by Unsplash's terms: photographer and Unsplash, both linked. */}
       <PhotoCredit
-        credit={image.credit}
+        show={image.fromPixabay}
         className="absolute right-4 top-24 z-10 rounded-full bg-dark/60 px-3 py-1.5 backdrop-blur-sm sm:right-8"
       />
 
