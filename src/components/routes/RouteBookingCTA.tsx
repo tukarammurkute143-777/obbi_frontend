@@ -6,7 +6,7 @@ export default function RouteBookingCTA({ from, to }: { from: string; to: string
     <section className="rounded-2xl border border-gold/40 bg-glass p-6 text-center backdrop-blur-sm sm:p-10">
       <p className="font-display text-2xl text-text sm:text-3xl">Is Route Pe Cab Chahiye? 🚗</p>
       <p className="mt-2 font-body text-sm text-text-muted sm:text-base">
-        Obii Cabs se book karo — {from} to {to}, best rates guaranteed!
+        Obii Cabs se book karo — {from} to {to}. Call ya WhatsApp karke apni date aur pickup time batao.
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">

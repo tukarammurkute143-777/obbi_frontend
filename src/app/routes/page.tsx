@@ -3,25 +3,55 @@ import Navbar from "@/components/landing/Navbar";
 import Footer from "@/components/landing/Footer";
 import RoutesHero from "@/components/routes/RoutesHero";
 import AllRoutesGrid from "@/components/routes/AllRoutesGrid";
+import type { RouteListItem } from "@/components/routes/types";
+import { ALL_ROUTES } from "@/lib/routes/allRoutes";
+import { fetchRouteImages } from "@/lib/unsplash";
 
 export const metadata: Metadata = {
-  title: "All Routes — Obii Cabs | Maharashtra Cab Routes",
+  title: "All Routes — Obii Cabs | Pilgrimage, Hill Station, Konkan & City Cab Routes",
   description:
-    "Explore all Obii Cabs routes across Maharashtra — Pune to Shirdi, Mumbai, Nashik, Mahabaleshwar, Goa and more. Distance, duration, top places and vehicles for every route.",
+    "Explore 120+ Obii Cabs routes across Maharashtra — Shirdi, Trimbakeshwar, Pandharpur, Ashtavinayak, Mahabaleshwar, Lonavala, Konkan, Goa, airport transfers and more. Distance, driving time and top places for every route.",
   keywords:
-    "maharashtra cab routes, pune cab routes, mumbai cab routes, obii cabs routes, outstation cab maharashtra",
+    "maharashtra cab routes, pune to shirdi cab, ashtavinayak darshan cab, jyotirlinga cab maharashtra, mumbai cab routes, obii cabs routes, outstation cab maharashtra",
   alternates: {
     canonical: "/routes",
   },
 };
 
-export default function RoutesPage() {
+export default async function RoutesPage() {
+  // Photos come from the saved Unsplash manifest, so this does not call the
+  // Unsplash API for places that already have one.
+  const images = await fetchRouteImages(
+    ALL_ROUTES.map((route) => ({
+      query: route.unsplashQuery,
+      options: {
+        category: route.category,
+        fallback: route.fallbackImage,
+        width: 700,
+        alt: `${route.from} to ${route.to} cab service`,
+      },
+    }))
+  );
+
+  const items: RouteListItem[] = ALL_ROUTES.map((route, i) => ({
+    slug: route.slug,
+    from: route.from,
+    to: route.to,
+    category: route.category,
+    distance: route.distance,
+    duration: route.duration,
+    popularFor: route.popularFor,
+    image: images[i],
+  }));
+
+  const placeCount = new Set(ALL_ROUTES.flatMap((r) => [r.from, r.to])).size;
+
   return (
     <>
       <Navbar />
       <main className="flex flex-1 flex-col bg-dark">
-        <RoutesHero />
-        <AllRoutesGrid />
+        <RoutesHero routeCount={ALL_ROUTES.length} placeCount={placeCount} />
+        <AllRoutesGrid routes={items} />
       </main>
       <Footer />
     </>

@@ -1,0 +1,974 @@
+{
+ "places": {
+  "Pune": {
+   "lat": 18.5204,
+   "lon": 73.8567
+  },
+  "Mumbai": {
+   "lat": 19.076,
+   "lon": 72.8777
+  },
+  "Nashik": {
+   "lat": 19.9975,
+   "lon": 73.7898
+  },
+  "Sambhajinagar": {
+   "lat": 19.8762,
+   "lon": 75.3433
+  },
+  "Nagpur": {
+   "lat": 21.1458,
+   "lon": 79.0882
+  },
+  "Kolhapur": {
+   "lat": 16.705,
+   "lon": 74.2433
+  },
+  "Solapur": {
+   "lat": 17.6599,
+   "lon": 75.9064
+  },
+  "Satara": {
+   "lat": 17.6805,
+   "lon": 74.0183
+  },
+  "Latur": {
+   "lat": 18.4088,
+   "lon": 76.5604
+  },
+  "Nanded": {
+   "lat": 19.1383,
+   "lon": 77.321
+  },
+  "Surat": {
+   "lat": 21.1702,
+   "lon": 72.8311
+  },
+  "Vadodara": {
+   "lat": 22.3072,
+   "lon": 73.1812
+  },
+  "Ahmedabad": {
+   "lat": 23.0225,
+   "lon": 72.5714
+  },
+  "Sangli": {
+   "lat": 16.8524,
+   "lon": 74.5815
+  },
+  "Ahilyanagar": {
+   "lat": 19.0948,
+   "lon": 74.748
+  },
+  "Karad": {
+   "lat": 17.2894,
+   "lon": 74.1818
+  },
+  "Shirdi": {
+   "lat": 19.7667,
+   "lon": 74.4769
+  },
+  "Trimbakeshwar": {
+   "lat": 19.9322,
+   "lon": 73.5307
+  },
+  "Bhimashankar": {
+   "lat": 19.072,
+   "lon": 73.5353
+  },
+  "Aundha Nagnath": {
+   "lat": 19.5333,
+   "lon": 77.05
+  },
+  "Grishneshwar": {
+   "lat": 20.0258,
+   "lon": 75.1802
+  },
+  "Pandharpur": {
+   "lat": 17.6792,
+   "lon": 75.332
+  },
+  "Akkalkot": {
+   "lat": 17.5266,
+   "lon": 76.2064
+  },
+  "Tuljapur": {
+   "lat": 18.0092,
+   "lon": 76.0709
+  },
+  "Mahur": {
+   "lat": 19.847,
+   "lon": 77.923
+  },
+  "Jejuri": {
+   "lat": 18.2765,
+   "lon": 74.1597
+  },
+  "Alandi": {
+   "lat": 18.6773,
+   "lon": 73.8985
+  },
+  "Dehu": {
+   "lat": 18.7167,
+   "lon": 73.7667
+  },
+  "Ganpatipule": {
+   "lat": 17.1467,
+   "lon": 73.27
+  },
+  "Shani Shingnapur": {
+   "lat": 19.397,
+   "lon": 74.834
+  },
+  "Ajanta Caves": {
+   "lat": 20.5519,
+   "lon": 75.7033
+  },
+  "Ellora Caves": {
+   "lat": 20.0268,
+   "lon": 75.179
+  },
+  "Saptashrungi": {
+   "lat": 20.2992,
+   "lon": 73.8897
+  },
+  "Shegaon": {
+   "lat": 20.7937,
+   "lon": 76.6989
+  },
+  "Narsobawadi": {
+   "lat": 16.6973,
+   "lon": 74.6112
+  },
+  "Gondavale": {
+   "lat": 17.4772,
+   "lon": 74.431
+  },
+  "Mahabaleshwar": {
+   "lat": 17.9237,
+   "lon": 73.6586
+  },
+  "Panchgani": {
+   "lat": 17.9242,
+   "lon": 73.8006
+  },
+  "Lonavala": {
+   "lat": 18.7546,
+   "lon": 73.4062
+  },
+  "Lavasa": {
+   "lat": 18.4106,
+   "lon": 73.5076
+  },
+  "Matheran": {
+   "lat": 18.9866,
+   "lon": 73.2685
+  },
+  "Igatpuri": {
+   "lat": 19.6954,
+   "lon": 73.5627
+  },
+  "Bhandardara": {
+   "lat": 19.5421,
+   "lon": 73.77
+  },
+  "Karjat": {
+   "lat": 18.91,
+   "lon": 73.3236
+  },
+  "Kaas Plateau": {
+   "lat": 17.7217,
+   "lon": 73.8231
+  },
+  "Saputara": {
+   "lat": 20.575,
+   "lon": 73.749
+  },
+  "Alibaug": {
+   "lat": 18.6414,
+   "lon": 72.8722
+  },
+  "Ratnagiri": {
+   "lat": 16.9902,
+   "lon": 73.312
+  },
+  "Sindhudurg": {
+   "lat": 16.059,
+   "lon": 73.463
+  },
+  "Tarkarli": {
+   "lat": 16.015,
+   "lon": 73.468
+  },
+  "Dapoli": {
+   "lat": 17.76,
+   "lon": 73.184
+  },
+  "Murud Janjira": {
+   "lat": 18.3266,
+   "lon": 72.9647
+  },
+  "Kashid": {
+   "lat": 18.428,
+   "lon": 72.9
+  },
+  "Harihareshwar": {
+   "lat": 18.0189,
+   "lon": 73.0206
+  },
+  "Goa": {
+   "lat": 15.4909,
+   "lon": 73.8278
+  },
+  "Tadoba": {
+   "lat": 20.2046,
+   "lon": 79.3382
+  },
+  "Mumbai Airport": {
+   "lat": 19.0896,
+   "lon": 72.8656
+  },
+  "Pune Airport": {
+   "lat": 18.5822,
+   "lon": 73.9197
+  },
+  "Morgaon": {
+   "lat": 18.28,
+   "lon": 74.33
+  },
+  "Siddhatek": {
+   "lat": 18.4559,
+   "lon": 74.7273
+  },
+  "Pali": {
+   "lat": 18.542,
+   "lon": 73.217
+  },
+  "Mahad": {
+   "lat": 18.8105,
+   "lon": 73.3013
+  },
+  "Theur": {
+   "lat": 18.5167,
+   "lon": 74.0167
+  },
+  "Lenyadri": {
+   "lat": 19.234,
+   "lon": 73.879
+  },
+  "Ozar": {
+   "lat": 19.1383,
+   "lon": 73.9367
+  },
+  "Ranjangaon": {
+   "lat": 18.787,
+   "lon": 74.242
+  }
+ },
+ "routes": [
+  [
+   "Pune",
+   "Shirdi",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Trimbakeshwar",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Bhimashankar",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Aundha Nagnath",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Grishneshwar",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Pandharpur",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Akkalkot",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Tuljapur",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Mahur",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Kolhapur",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Jejuri",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Alandi",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Dehu",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Ganpatipule",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Ashtavinayak Darshan",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Shani Shingnapur",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Ajanta Caves",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Ellora Caves",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Nashik",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Saptashrungi",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Shegaon",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Narsobawadi",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Gondavale",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Shirdi",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Trimbakeshwar",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Ganpatipule",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Pandharpur",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Tuljapur",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Akkalkot",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Saptashrungi",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Shani Shingnapur",
+   "pilgrimage"
+  ],
+  [
+   "Mumbai",
+   "Bhimashankar",
+   "pilgrimage"
+  ],
+  [
+   "Nashik",
+   "Trimbakeshwar",
+   "pilgrimage"
+  ],
+  [
+   "Nashik",
+   "Shirdi",
+   "pilgrimage"
+  ],
+  [
+   "Nashik",
+   "Shani Shingnapur",
+   "pilgrimage"
+  ],
+  [
+   "Nashik",
+   "Saptashrungi",
+   "pilgrimage"
+  ],
+  [
+   "Sambhajinagar",
+   "Grishneshwar",
+   "pilgrimage"
+  ],
+  [
+   "Sambhajinagar",
+   "Ajanta Caves",
+   "pilgrimage"
+  ],
+  [
+   "Sambhajinagar",
+   "Aundha Nagnath",
+   "pilgrimage"
+  ],
+  [
+   "Sambhajinagar",
+   "Shirdi",
+   "pilgrimage"
+  ],
+  [
+   "Sambhajinagar",
+   "Shani Shingnapur",
+   "pilgrimage"
+  ],
+  [
+   "Sambhajinagar",
+   "Ellora Caves",
+   "pilgrimage"
+  ],
+  [
+   "Solapur",
+   "Akkalkot",
+   "pilgrimage"
+  ],
+  [
+   "Solapur",
+   "Tuljapur",
+   "pilgrimage"
+  ],
+  [
+   "Solapur",
+   "Pandharpur",
+   "pilgrimage"
+  ],
+  [
+   "Kolhapur",
+   "Ganpatipule",
+   "pilgrimage"
+  ],
+  [
+   "Kolhapur",
+   "Pandharpur",
+   "pilgrimage"
+  ],
+  [
+   "Nagpur",
+   "Shirdi",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Mahabaleshwar",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Panchgani",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Lonavala",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Lavasa",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Matheran",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Igatpuri",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Bhandardara",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Kaas Plateau",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Mahabaleshwar",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Lonavala",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Matheran",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Igatpuri",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Bhandardara",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Panchgani",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Lavasa",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Karjat",
+   "hill_station"
+  ],
+  [
+   "Mumbai",
+   "Saputara",
+   "hill_station"
+  ],
+  [
+   "Nashik",
+   "Igatpuri",
+   "hill_station"
+  ],
+  [
+   "Nashik",
+   "Bhandardara",
+   "hill_station"
+  ],
+  [
+   "Nashik",
+   "Saputara",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Alibaug",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Ratnagiri",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Sindhudurg",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Tarkarli",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Dapoli",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Murud Janjira",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Kashid",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Harihareshwar",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Goa",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Alibaug",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Tarkarli",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Konkan Darshan",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Kashid",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Murud Janjira",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Dapoli",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Ratnagiri",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Sindhudurg",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Harihareshwar",
+   "coastal"
+  ],
+  [
+   "Mumbai",
+   "Goa",
+   "coastal"
+  ],
+  [
+   "Nashik",
+   "Goa",
+   "coastal"
+  ],
+  [
+   "Kolhapur",
+   "Goa",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Mumbai",
+   "city"
+  ],
+  [
+   "Pune",
+   "Sambhajinagar",
+   "city"
+  ],
+  [
+   "Pune",
+   "Nagpur",
+   "city"
+  ],
+  [
+   "Pune",
+   "Solapur",
+   "city"
+  ],
+  [
+   "Pune",
+   "Satara",
+   "city"
+  ],
+  [
+   "Pune",
+   "Latur",
+   "city"
+  ],
+  [
+   "Pune",
+   "Nanded",
+   "city"
+  ],
+  [
+   "Pune",
+   "Sangli",
+   "city"
+  ],
+  [
+   "Pune",
+   "Ahilyanagar",
+   "city"
+  ],
+  [
+   "Pune",
+   "Karad",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Pune",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Nashik",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Nagpur",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Kolhapur",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Sambhajinagar",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Surat",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Vadodara",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Ahmedabad",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Solapur",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Satara",
+   "city"
+  ],
+  [
+   "Nashik",
+   "Pune",
+   "city"
+  ],
+  [
+   "Nashik",
+   "Mumbai",
+   "city"
+  ],
+  [
+   "Nashik",
+   "Sambhajinagar",
+   "city"
+  ],
+  [
+   "Nashik",
+   "Nagpur",
+   "city"
+  ],
+  [
+   "Nashik",
+   "Surat",
+   "city"
+  ],
+  [
+   "Sambhajinagar",
+   "Pune",
+   "city"
+  ],
+  [
+   "Sambhajinagar",
+   "Mumbai",
+   "city"
+  ],
+  [
+   "Sambhajinagar",
+   "Nashik",
+   "city"
+  ],
+  [
+   "Sambhajinagar",
+   "Nagpur",
+   "city"
+  ],
+  [
+   "Nagpur",
+   "Pune",
+   "city"
+  ],
+  [
+   "Nagpur",
+   "Mumbai",
+   "city"
+  ],
+  [
+   "Nagpur",
+   "Tadoba",
+   "city"
+  ],
+  [
+   "Kolhapur",
+   "Pune",
+   "city"
+  ],
+  [
+   "Kolhapur",
+   "Mumbai",
+   "city"
+  ],
+  [
+   "Solapur",
+   "Pune",
+   "city"
+  ],
+  [
+   "Nanded",
+   "Pune",
+   "city"
+  ],
+  [
+   "Latur",
+   "Pune",
+   "city"
+  ],
+  [
+   "Satara",
+   "Pune",
+   "city"
+  ],
+  [
+   "Pune",
+   "Mumbai Airport",
+   "airport"
+  ],
+  [
+   "Pune",
+   "Pune Airport",
+   "airport"
+  ],
+  [
+   "Mumbai",
+   "Pune Airport",
+   "airport"
+  ],
+  [
+   "Nashik",
+   "Mumbai Airport",
+   "airport"
+  ],
+  [
+   "Nashik",
+   "Pune Airport",
+   "airport"
+  ],
+  [
+   "Sambhajinagar",
+   "Pune Airport",
+   "airport"
+  ],
+  [
+   "Sambhajinagar",
+   "Mumbai Airport",
+   "airport"
+  ],
+  [
+   "Kolhapur",
+   "Pune Airport",
+   "airport"
+  ],
+  [
+   "Satara",
+   "Pune Airport",
+   "airport"
+  ]
+ ],
+ "circuits": {
+  "Ashtavinayak Darshan": [
+   "Pune",
+   "Morgaon",
+   "Siddhatek",
+   "Theur",
+   "Ranjangaon",
+   "Ozar",
+   "Lenyadri",
+   "Mahad",
+   "Pali",
+   "Pune"
+  ],
+  "Konkan Darshan": [
+   "Mumbai",
+   "Alibaug",
+   "Murud Janjira",
+   "Dapoli",
+   "Ganpatipule",
+   "Ratnagiri",
+   "Tarkarli",
+   "Sindhudurg"
+  ]
+ }
+}

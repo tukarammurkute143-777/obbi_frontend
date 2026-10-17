@@ -2,7 +2,6 @@
 
 import { motion, type Variants } from "framer-motion";
 import StarsBackground from "@/components/landing/StarsBackground";
-import { ROUTES_DATA } from "@/lib/routes/routesData";
 
 const container: Variants = {
   hidden: { opacity: 0 },
@@ -17,11 +16,14 @@ const item: Variants = {
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 };
 
-const CITY_COUNT = new Set(ROUTES_DATA.flatMap((r) => [r.from, r.to])).size;
+interface RoutesHeroProps {
+  routeCount: number;
+  placeCount: number;
+}
 
-const STATS = [`${ROUTES_DATA.length} Routes`, `${CITY_COUNT} Cities`, "All Vehicles"];
+export default function RoutesHero({ routeCount, placeCount }: RoutesHeroProps) {
+  const stats = [`${routeCount} Routes`, `${placeCount} Places`, "All Vehicles"];
 
-export default function RoutesHero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-dark via-dark-2 to-dark pb-12 pt-28 sm:pt-32">
       <StarsBackground />
@@ -52,14 +54,14 @@ export default function RoutesHero() {
           variants={item}
           className="mt-6 font-body text-base font-light text-text-muted sm:text-lg md:text-xl"
         >
-          Maharashtra ke {ROUTES_DATA.length}+ popular routes — Obii Cabs ke saath!
+          Maharashtra ke {routeCount}+ routes — tirth, hill station, Konkan aur city trips Obii Cabs ke saath!
         </motion.p>
 
         <motion.div
           variants={item}
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
-          {STATS.map((stat) => (
+          {stats.map((stat) => (
             <span
               key={stat}
               className="rounded-full border border-border bg-glass px-4 py-1.5 font-body text-xs text-text-muted sm:text-sm"

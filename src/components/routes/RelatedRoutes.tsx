@@ -1,38 +1,42 @@
-import Image from "next/image";
 import Link from "next/link";
-import type { RouteData } from "@/lib/routes/routesData";
+import { CATEGORY_META } from "@/lib/routes/categories";
+import type { RouteListItem } from "./types";
 
-export default function RelatedRoutes({ routes }: { routes: RouteData[] }) {
+interface RelatedRoutesProps {
+  routes: Omit<RouteListItem, "image">[];
+  title?: string;
+}
+
+// Text-only on purpose: Unsplash requires a visible credit next to every photo
+// it supplies, which does not fit on a thumbnail.
+export default function RelatedRoutes({
+  routes,
+  title = "Related Pilgrimage Routes",
+}: RelatedRoutesProps) {
   if (routes.length === 0) return null;
 
   return (
     <div className="rounded-2xl border border-border bg-glass p-5 backdrop-blur-sm">
-      <h3 className="font-display text-lg font-semibold text-text">Related Routes</h3>
+      <h3 className="font-display text-lg font-semibold text-text">{title}</h3>
 
-      <div className="mt-4 flex flex-col gap-3">
+      <div className="mt-4 flex flex-col gap-2">
         {routes.map((route) => (
           <Link
             key={route.slug}
             href={`/routes/${route.slug}`}
-            className="group flex items-center gap-3 rounded-xl border border-border/60 p-2 transition-colors duration-200 hover:border-gold/50 hover:bg-gold/5"
+            className="group flex items-center gap-3 rounded-xl border border-border/60 px-3 py-2.5 transition-colors duration-200 hover:border-gold/50 hover:bg-gold/5"
           >
-            <div className="relative h-14 w-20 shrink-0 overflow-hidden rounded-lg">
-              <Image
-                src={route.image}
-                alt={`${route.from} to ${route.to} cab`}
-                fill
-                sizes="80px"
-                className="object-cover"
-              />
-            </div>
-            <div className="min-w-0">
-              <p className="truncate font-body text-sm font-medium text-text group-hover:text-gold-light">
+            <span className="text-2xl" aria-hidden="true">
+              {CATEGORY_META[route.category].emoji}
+            </span>
+            <span className="min-w-0">
+              <span className="block truncate font-body text-sm font-medium text-text group-hover:text-gold-light">
                 {route.from} → {route.to}
-              </p>
-              <p className="font-body text-xs text-text-muted">
-                {route.distance} · ⭐ {route.rating}
-              </p>
-            </div>
+              </span>
+              <span className="block font-body text-xs text-text-muted">
+                {route.distance} · {route.popularFor}
+              </span>
+            </span>
           </Link>
         ))}
       </div>

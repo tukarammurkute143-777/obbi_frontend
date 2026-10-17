@@ -123,7 +123,7 @@ export const ROUTES_DATA: RouteData[] = [
       },
     ],
     relatedRoutes: ["pune-to-nashik", "pune-to-mumbai", "mumbai-to-shirdi"],
-    seoTitle: "Pune to Shirdi Cab Service | Obii Cabs | ₹Best Rates | Book Now",
+    seoTitle: "Pune to Shirdi Cab Service | Obii Cabs | Book Now",
     seoDescription:
       "Book Pune to Shirdi cab with Obii Cabs. 242 km, 4.5 hours. Innova Crysta, Ertiga, Urbania available. Professional drivers. 4.9 rating. Call now!",
     seoKeywords:
@@ -579,7 +579,7 @@ export const ROUTES_DATA: RouteData[] = [
     relatedRoutes: ["pune-to-mumbai", "pune-to-mahabaleshwar", "pune-to-lonavala"],
     seoTitle: "Pune to Goa Cab Service | Obii Cabs | Best Road Trip | Book Now",
     seoDescription:
-      "Book Pune to Goa cab with Obii Cabs. 460 km road trip. Innova, Urbania available. Experienced drivers for ghat roads. Best rates. Call now!",
+      "Book Pune to Goa cab with Obii Cabs. 460 km road trip. Innova, Urbania available. Experienced drivers for ghat roads. Call now!",
     seoKeywords:
       "pune to goa cab, pune goa taxi, pune to goa road trip, goa cab booking pune, pune goa innova",
   },
@@ -846,7 +846,7 @@ export const ROUTES_DATA: RouteData[] = [
     trips: 143,
     description:
       "Pune to Mumbai Airport transfers — reliable, punctual, and comfortable. Never miss a flight again! Obii Cabs specializes in airport transfers with professional drivers who know the best routes.",
-    highlights: ["Airport Transfer", "Flight Guarantee", "24/7 Available"],
+    highlights: ["Airport Transfer", "Flight-Timed Pickup", "24/7 Available"],
     topPlaces: [
       {
         name: "Chhatrapati Shivaji Airport",
@@ -893,7 +893,7 @@ export const ROUTES_DATA: RouteData[] = [
     relatedRoutes: ["pune-to-mumbai", "mumbai-to-pune", "pune-to-shirdi"],
     seoTitle: "Pune to Mumbai Airport Cab | Obii Cabs | Never Miss a Flight | Book Now",
     seoDescription:
-      "Reliable Pune to Mumbai Airport cab transfer. 160 km, 3 hours. 24/7 available. Professional drivers. On-time guarantee. Call now!",
+      "Reliable Pune to Mumbai Airport cab transfer. 160 km, 3 hours. 24/7 available. Professional drivers. Pickup timed to your flight. Call now!",
     seoKeywords:
       "pune to mumbai airport cab, pune airport transfer, pune to csia cab, pune mumbai airport taxi",
   },

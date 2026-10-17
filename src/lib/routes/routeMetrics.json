@@ -1,0 +1,546 @@
+{
+ "pune-to-shirdi": {
+  "km": 200.9,
+  "minutes": 150
+ },
+ "pune-to-trimbakeshwar": {
+  "km": 241.2,
+  "minutes": 190
+ },
+ "pune-to-bhimashankar": {
+  "km": 111.0,
+  "minutes": 103
+ },
+ "pune-to-aundha-nagnath": {
+  "km": 426.7,
+  "minutes": 321
+ },
+ "pune-to-grishneshwar": {
+  "km": 256.5,
+  "minutes": 200
+ },
+ "pune-to-pandharpur": {
+  "km": 209.6,
+  "minutes": 151
+ },
+ "pune-to-akkalkot": {
+  "km": 288.7,
+  "minutes": 208
+ },
+ "pune-to-tuljapur": {
+  "km": 273.2,
+  "minutes": 208
+ },
+ "pune-to-mahur": {
+  "km": 557.3,
+  "minutes": 413
+ },
+ "pune-to-kolhapur": {
+  "km": 232.7,
+  "minutes": 198
+ },
+ "pune-to-jejuri": {
+  "km": 50.3,
+  "minutes": 38
+ },
+ "pune-to-alandi": {
+  "km": 22.1,
+  "minutes": 21
+ },
+ "pune-to-dehu": {
+  "km": 27.9,
+  "minutes": 29
+ },
+ "pune-to-ganpatipule": {
+  "km": 318.1,
+  "minutes": 275
+ },
+ "pune-to-ashtavinayak-darshan": {
+  "km": 659.5,
+  "minutes": 587
+ },
+ "pune-to-shani-shingnapur": {
+  "km": 167.6,
+  "minutes": 128
+ },
+ "pune-to-ajanta-caves": {
+  "km": 328.2,
+  "minutes": 257
+ },
+ "pune-to-ellora-caves": {
+  "km": 256.5,
+  "minutes": 200
+ },
+ "pune-to-nashik": {
+  "km": 212.6,
+  "minutes": 167
+ },
+ "pune-to-saptashrungi": {
+  "km": 251.3,
+  "minutes": 202
+ },
+ "pune-to-shegaon": {
+  "km": 446.4,
+  "minutes": 335
+ },
+ "pune-to-narsobawadi": {
+  "km": 267.1,
+  "minutes": 195
+ },
+ "pune-to-gondavale": {
+  "km": 183.5,
+  "minutes": 140
+ },
+ "mumbai-to-shirdi": {
+  "km": 241.3,
+  "minutes": 173
+ },
+ "mumbai-to-trimbakeshwar": {
+  "km": 167.6,
+  "minutes": 125
+ },
+ "mumbai-to-ganpatipule": {
+  "km": 339.4,
+  "minutes": 269
+ },
+ "mumbai-to-pandharpur": {
+  "km": 352.9,
+  "minutes": 265
+ },
+ "mumbai-to-tuljapur": {
+  "km": 416.5,
+  "minutes": 322
+ },
+ "mumbai-to-akkalkot": {
+  "km": 432.0,
+  "minutes": 322
+ },
+ "mumbai-to-saptashrungi": {
+  "km": 205.0,
+  "minutes": 154
+ },
+ "mumbai-to-shani-shingnapur": {
+  "km": 293.6,
+  "minutes": 211
+ },
+ "mumbai-to-bhimashankar": {
+  "km": 212.9,
+  "minutes": 182
+ },
+ "nashik-to-trimbakeshwar": {
+  "km": 29.7,
+  "minutes": 25
+ },
+ "nashik-to-shirdi": {
+  "km": 90.6,
+  "minutes": 66
+ },
+ "nashik-to-shani-shingnapur": {
+  "km": 143.0,
+  "minutes": 104
+ },
+ "nashik-to-saptashrungi": {
+  "km": 38.4,
+  "minutes": 37
+ },
+ "sambhajinagar-to-grishneshwar": {
+  "km": 32.1,
+  "minutes": 25
+ },
+ "sambhajinagar-to-ajanta-caves": {
+  "km": 96.7,
+  "minutes": 75
+ },
+ "sambhajinagar-to-aundha-nagnath": {
+  "km": 197.1,
+  "minutes": 159
+ },
+ "sambhajinagar-to-shirdi": {
+  "km": 110.1,
+  "minutes": 77
+ },
+ "sambhajinagar-to-shani-shingnapur": {
+  "km": 89.0,
+  "minutes": 73
+ },
+ "sambhajinagar-to-ellora-caves": {
+  "km": 32.1,
+  "minutes": 25
+ },
+ "solapur-to-akkalkot": {
+  "km": 38.5,
+  "minutes": 29
+ },
+ "solapur-to-tuljapur": {
+  "km": 46.9,
+  "minutes": 37
+ },
+ "solapur-to-pandharpur": {
+  "km": 71.7,
+  "minutes": 55
+ },
+ "kolhapur-to-ganpatipule": {
+  "km": 160.1,
+  "minutes": 120
+ },
+ "kolhapur-to-pandharpur": {
+  "km": 177.8,
+  "minutes": 131
+ },
+ "nagpur-to-shirdi": {
+  "km": 553.2,
+  "minutes": 359
+ },
+ "pune-to-mahabaleshwar": {
+  "km": 120.4,
+  "minutes": 124
+ },
+ "pune-to-panchgani": {
+  "km": 101.6,
+  "minutes": 106
+ },
+ "pune-to-lonavala": {
+  "km": 63.5,
+  "minutes": 52
+ },
+ "pune-to-lavasa": {
+  "km": 69.3,
+  "minutes": 66
+ },
+ "pune-to-matheran": {
+  "km": 105.8,
+  "minutes": 110
+ },
+ "pune-to-igatpuri": {
+  "km": 222.7,
+  "minutes": 172
+ },
+ "pune-to-bhandardara": {
+  "km": 162.5,
+  "minutes": 154
+ },
+ "pune-to-kaas-plateau": {
+  "km": 134.1,
+  "minutes": 136
+ },
+ "mumbai-to-mahabaleshwar": {
+  "km": 220.3,
+  "minutes": 171
+ },
+ "mumbai-to-lonavala": {
+  "km": 81.8,
+  "minutes": 65
+ },
+ "mumbai-to-matheran": {
+  "km": 66.2,
+  "minutes": 79
+ },
+ "mumbai-to-igatpuri": {
+  "km": 120.6,
+  "minutes": 89
+ },
+ "mumbai-to-bhandardara": {
+  "km": 164.0,
+  "minutes": 128
+ },
+ "mumbai-to-panchgani": {
+  "km": 238.6,
+  "minutes": 188
+ },
+ "mumbai-to-lavasa": {
+  "km": 171.3,
+  "minutes": 147
+ },
+ "mumbai-to-karjat": {
+  "km": 63.2,
+  "minutes": 52
+ },
+ "mumbai-to-saputara": {
+  "km": 255.9,
+  "minutes": 183
+ },
+ "nashik-to-igatpuri": {
+  "km": 45.7,
+  "minutes": 37
+ },
+ "nashik-to-bhandardara": {
+  "km": 71.8,
+  "minutes": 63
+ },
+ "nashik-to-saputara": {
+  "km": 77.7,
+  "minutes": 65
+ },
+ "pune-to-alibaug": {
+  "km": 140.0,
+  "minutes": 111
+ },
+ "pune-to-ratnagiri": {
+  "km": 311.0,
+  "minutes": 261
+ },
+ "pune-to-sindhudurg": {
+  "km": 388.6,
+  "minutes": 319
+ },
+ "pune-to-tarkarli": {
+  "km": 391.0,
+  "minutes": 325
+ },
+ "pune-to-dapoli": {
+  "km": 193.0,
+  "minutes": 175
+ },
+ "pune-to-murud-janjira": {
+  "km": 183.2,
+  "minutes": 142
+ },
+ "pune-to-kashid": {
+  "km": 171.6,
+  "minutes": 139
+ },
+ "pune-to-harihareshwar": {
+  "km": 169.5,
+  "minutes": 153
+ },
+ "pune-to-goa": {
+  "km": 472.8,
+  "minutes": 355
+ },
+ "mumbai-to-alibaug": {
+  "km": 94.9,
+  "minutes": 75
+ },
+ "mumbai-to-tarkarli": {
+  "km": 483.0,
+  "minutes": 372
+ },
+ "mumbai-to-konkan-darshan": {
+  "km": 579.9,
+  "minutes": 541
+ },
+ "mumbai-to-kashid": {
+  "km": 126.5,
+  "minutes": 103
+ },
+ "mumbai-to-murud-janjira": {
+  "km": 151.9,
+  "minutes": 117
+ },
+ "mumbai-to-dapoli": {
+  "km": 214.3,
+  "minutes": 170
+ },
+ "mumbai-to-ratnagiri": {
+  "km": 332.3,
+  "minutes": 255
+ },
+ "mumbai-to-sindhudurg": {
+  "km": 480.6,
+  "minutes": 367
+ },
+ "mumbai-to-harihareshwar": {
+  "km": 190.8,
+  "minutes": 148
+ },
+ "mumbai-to-goa": {
+  "km": 541.7,
+  "minutes": 413
+ },
+ "nashik-to-goa": {
+  "km": 668.4,
+  "minutes": 496
+ },
+ "kolhapur-to-goa": {
+  "km": 197.8,
+  "minutes": 166
+ },
+ "pune-to-mumbai": {
+  "km": 146.8,
+  "minutes": 117
+ },
+ "pune-to-sambhajinagar": {
+  "km": 235.7,
+  "minutes": 183
+ },
+ "pune-to-nagpur": {
+  "km": 688.1,
+  "minutes": 497
+ },
+ "pune-to-solapur": {
+  "km": 253.3,
+  "minutes": 183
+ },
+ "pune-to-satara": {
+  "km": 112.6,
+  "minutes": 113
+ },
+ "pune-to-latur": {
+  "km": 322.3,
+  "minutes": 235
+ },
+ "pune-to-nanded": {
+  "km": 429.8,
+  "minutes": 308
+ },
+ "pune-to-sangli": {
+  "km": 248.1,
+  "minutes": 181
+ },
+ "pune-to-ahilyanagar": {
+  "km": 121.9,
+  "minutes": 95
+ },
+ "pune-to-karad": {
+  "km": 162.6,
+  "minutes": 149
+ },
+ "mumbai-to-pune": {
+  "km": 144.8,
+  "minutes": 116
+ },
+ "mumbai-to-nashik": {
+  "km": 166.3,
+  "minutes": 120
+ },
+ "mumbai-to-nagpur": {
+  "km": 779.0,
+  "minutes": 536
+ },
+ "mumbai-to-kolhapur": {
+  "km": 372.4,
+  "minutes": 307
+ },
+ "mumbai-to-sambhajinagar": {
+  "km": 328.0,
+  "minutes": 229
+ },
+ "mumbai-to-surat": {
+  "km": 275.9,
+  "minutes": 200
+ },
+ "mumbai-to-vadodara": {
+  "km": 403.8,
+  "minutes": 289
+ },
+ "mumbai-to-ahmedabad": {
+  "km": 502.4,
+  "minutes": 362
+ },
+ "mumbai-to-solapur": {
+  "km": 396.6,
+  "minutes": 297
+ },
+ "mumbai-to-satara": {
+  "km": 274.7,
+  "minutes": 221
+ },
+ "nashik-to-pune": {
+  "km": 212.9,
+  "minutes": 173
+ },
+ "nashik-to-mumbai": {
+  "km": 167.0,
+  "minutes": 122
+ },
+ "nashik-to-sambhajinagar": {
+  "km": 180.4,
+  "minutes": 123
+ },
+ "nashik-to-nagpur": {
+  "km": 631.4,
+  "minutes": 430
+ },
+ "nashik-to-surat": {
+  "km": 227.5,
+  "minutes": 166
+ },
+ "sambhajinagar-to-pune": {
+  "km": 236.9,
+  "minutes": 185
+ },
+ "sambhajinagar-to-mumbai": {
+  "km": 334.8,
+  "minutes": 234
+ },
+ "sambhajinagar-to-nashik": {
+  "km": 183.3,
+  "minutes": 126
+ },
+ "sambhajinagar-to-nagpur": {
+  "km": 452.4,
+  "minutes": 314
+ },
+ "nagpur-to-pune": {
+  "km": 680.6,
+  "minutes": 480
+ },
+ "nagpur-to-mumbai": {
+  "km": 777.9,
+  "minutes": 517
+ },
+ "nagpur-to-tadoba": {
+  "km": 160.3,
+  "minutes": 144
+ },
+ "kolhapur-to-pune": {
+  "km": 229.2,
+  "minutes": 190
+ },
+ "kolhapur-to-mumbai": {
+  "km": 370.8,
+  "minutes": 301
+ },
+ "solapur-to-pune": {
+  "km": 252.4,
+  "minutes": 182
+ },
+ "nanded-to-pune": {
+  "km": 429.1,
+  "minutes": 308
+ },
+ "latur-to-pune": {
+  "km": 322.6,
+  "minutes": 234
+ },
+ "satara-to-pune": {
+  "km": 109.4,
+  "minutes": 100
+ },
+ "pune-to-mumbai-airport": {
+  "km": 148.7,
+  "minutes": 119
+ },
+ "pune-to-pune-airport": {
+  "km": 12.3,
+  "minutes": 16
+ },
+ "mumbai-to-pune-airport": {
+  "km": 150.5,
+  "minutes": 124
+ },
+ "nashik-to-mumbai-airport": {
+  "km": 168.9,
+  "minutes": 124
+ },
+ "nashik-to-pune-airport": {
+  "km": 210.0,
+  "minutes": 174
+ },
+ "sambhajinagar-to-pune-airport": {
+  "km": 230.9,
+  "minutes": 185
+ },
+ "sambhajinagar-to-mumbai-airport": {
+  "km": 336.7,
+  "minutes": 236
+ },
+ "kolhapur-to-pune-airport": {
+  "km": 240.6,
+  "minutes": 205
+ },
+ "satara-to-pune-airport": {
+  "km": 120.8,
+  "minutes": 115
+ }
+}

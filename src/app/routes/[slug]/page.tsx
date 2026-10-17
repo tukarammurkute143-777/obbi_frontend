@@ -7,61 +7,102 @@ import Footer from "@/components/landing/Footer";
 import RouteHero from "@/components/routes/RouteHero";
 import RouteStats from "@/components/routes/RouteStats";
 import TopPlaces from "@/components/routes/TopPlaces";
+import PlaceHighlights from "@/components/routes/PlaceHighlights";
 import AvailableVehicles from "@/components/routes/AvailableVehicles";
 import RouteReviews from "@/components/routes/RouteReviews";
 import RouteBookingCTA from "@/components/routes/RouteBookingCTA";
 import RouteQuickBook from "@/components/routes/RouteQuickBook";
 import RelatedRoutes from "@/components/routes/RelatedRoutes";
-import { ROUTES_DATA, getRelatedRoutes, getRouteBySlug } from "@/lib/routes/routesData";
+import {
+  ALL_ROUTES,
+  getRelatedPilgrimageRoutes,
+  getRoute,
+  routeSeo,
+  type Route,
+} from "@/lib/routes/allRoutes";
+import { getRouteBySlug as getLegacyRoute, type RouteVehicle } from "@/lib/routes/routesData";
+import { VEHICLES as FLEET } from "@/lib/fleet/constants";
+import { fetchRouteImage } from "@/lib/unsplash";
 
 interface RoutePageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return ROUTES_DATA.map((route) => ({ slug: route.slug }));
+  return ALL_ROUTES.map((route) => ({ slug: route.slug }));
+}
+
+function routeImage(route: Route, width: number) {
+  return fetchRouteImage(route.unsplashQuery, {
+    category: route.category,
+    fallback: route.fallbackImage,
+    width,
+    alt: `${route.from} to ${route.to} cab service`,
+  });
+}
+
+// Vehicle cards for routes without hand-written ones. Names come from the real
+// fleet list; there is no price on any card.
+function fleetCards(names: string[]): RouteVehicle[] {
+  return names.flatMap((name) => {
+    const v = FLEET.find((f) => f.name === name);
+    if (!v) return [];
+    return [
+      {
+        name: v.name,
+        emoji: v.emoji,
+        reason: `Seats up to ${v.seats} passengers. Good for ${v.bestFor.slice(0, 2).join(" and ").toLowerCase()}.`,
+      },
+    ];
+  });
 }
 
 export async function generateMetadata({ params }: RoutePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const route = getRouteBySlug(slug);
+  const route = getRoute(slug);
 
   if (!route) {
     return { title: "Route Not Found — Obii Cabs" };
   }
 
+  const seo = routeSeo(route);
+  const image = await routeImage(route, 1200);
+
   return {
-    title: route.seoTitle,
-    description: route.seoDescription,
-    keywords: route.seoKeywords,
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
     alternates: {
       canonical: `/routes/${route.slug}`,
     },
     openGraph: {
-      title: route.seoTitle,
-      description: route.seoDescription,
+      title: seo.title,
+      description: seo.description,
       url: `/routes/${route.slug}`,
-      images: [{ url: route.image }],
+      images: [{ url: image.url }],
     },
   };
 }
 
 export default async function RoutePage({ params }: RoutePageProps) {
   const { slug } = await params;
-  const route = getRouteBySlug(slug);
+  const route = getRoute(slug);
 
   if (!route) {
     notFound();
   }
 
-  const related = getRelatedRoutes(route.relatedRoutes);
+  // Routes that were written by hand keep their detailed places and reviews.
+  const legacy = getLegacyRoute(route.slug);
+  const image = await routeImage(route, 1600);
+  const related = getRelatedPilgrimageRoutes(route);
 
   return (
     <>
       <Navbar />
 
       <main className="flex flex-1 flex-col bg-dark">
-        <RouteHero route={route} />
+        <RouteHero route={route} image={image} />
 
         <div className="mx-auto w-full max-w-6xl px-5 py-8 sm:px-8 sm:py-12">
           <nav
@@ -89,22 +130,39 @@ export default async function RoutePage({ params }: RoutePageProps) {
                 {route.description}
               </p>
 
-              <TopPlaces places={route.topPlaces} to={route.to} />
+              {legacy ? (
+                <TopPlaces places={legacy.topPlaces} to={route.to} />
+              ) : (
+                <PlaceHighlights
+                  places={route.highlights}
+                  to={route.to}
+                  category={route.category}
+                />
+              )}
 
               <AvailableVehicles
-                vehicles={route.recommendedVehicles}
+                vehicles={legacy ? legacy.recommendedVehicles : fleetCards(route.vehicles)}
                 from={route.from}
                 to={route.to}
               />
 
-              <RouteReviews reviews={route.reviews} from={route.from} to={route.to} />
+              {legacy && (
+                <RouteReviews reviews={legacy.reviews} from={route.from} to={route.to} />
+              )}
 
               <RouteBookingCTA from={route.from} to={route.to} />
             </div>
 
             <aside className="flex flex-col gap-5 lg:sticky lg:top-24 lg:self-start">
               <RouteQuickBook from={route.from} to={route.to} />
-              <RelatedRoutes routes={related} />
+              <RelatedRoutes
+                routes={related}
+                title={
+                  route.category === "pilgrimage"
+                    ? "Related Pilgrimage Routes"
+                    : "Popular Pilgrimage Routes"
+                }
+              />
             </aside>
           </div>
         </div>
