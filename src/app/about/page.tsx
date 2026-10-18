@@ -11,7 +11,7 @@ import AboutReviews from "@/components/about/AboutReviews";
 export const metadata: Metadata = {
   title: "About Us — Obii Cabs | Best Cab Service Maharashtra Since 2020",
   description:
-    "Obii Cabs — One Booking, Infinite Independence. Best cab service in Maharashtra since 2020. 1247+ happy customers, 4.8 rating, 120+ routes.",
+    "Obii Cabs — One Booking, Infinite Independence. Best cab service in Maharashtra since 2020. 1247+ happy customers, 4.8 rating, 146+ routes.",
   keywords: [
     "about obii cabs",
     "best cab service pune",

@@ -33,8 +33,8 @@ export const FEATURES: Feature[] = [
   },
   {
     emoji: "🗺️",
-    title: "120+ Routes",
-    desc: "Maharashtra ke 120+ routes — Har destination covered!",
+    title: "146+ Routes",
+    desc: "Maharashtra ke 146+ routes — Har destination covered!",
   },
   {
     emoji: "👨‍✈️",
