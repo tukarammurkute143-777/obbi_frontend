@@ -7,6 +7,13 @@ export interface Route {
   slug: string;
 }
 
+/** What the portal search needs to match a typed route to a route page. */
+export interface RouteIndexItem {
+  slug: string;
+  from: string;
+  to: string;
+}
+
 export interface Vehicle {
   /** Path of the vehicle photo under /images/vehicles/. */
   image: string;

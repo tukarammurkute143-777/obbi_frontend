@@ -10,8 +10,9 @@ import PopularRoutes from "./PopularRoutes";
 import FleetPreview from "./FleetPreview";
 import MyBookings from "./MyBookings";
 import SafarBot from "./SafarBot";
+import type { RouteIndexItem } from "@/lib/portal/types";
 
-export default function PortalContent() {
+export default function PortalContent({ routes }: { routes: RouteIndexItem[] }) {
   const { user, loading, logout } = useAuth();
 
   if (loading || !user) {
@@ -36,7 +37,7 @@ export default function PortalContent() {
 
       <main className="pb-20">
         <Suspense fallback={null}>
-          <SearchSection user={user} />
+          <SearchSection user={user} routes={routes} />
         </Suspense>
         <PopularRoutes />
         <FleetPreview />

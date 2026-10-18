@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PortalContent from "@/components/portal/PortalContent";
+import { ALL_ROUTES } from "@/lib/routes/allRoutes";
 
 export const metadata: Metadata = {
   title: "My Portal — Obii Cabs | Book Cab in Maharashtra",
@@ -12,5 +13,8 @@ export const metadata: Metadata = {
 };
 
 export default function PortalPage() {
-  return <PortalContent />;
+  // Only the three fields the search needs, so the full route data (copy,
+  // highlights) stays out of the client bundle.
+  const routeIndex = ALL_ROUTES.map(({ slug, from, to }) => ({ slug, from, to }));
+  return <PortalContent routes={routeIndex} />;
 }

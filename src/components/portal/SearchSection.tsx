@@ -6,11 +6,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, Calendar, Flag, MapPin } from "lucide-react";
 import type { AuthUser } from "@/lib/auth/loginUtils";
 import { getLastTrip } from "@/lib/auth/loginUtils";
-import { POPULAR_ROUTES } from "@/lib/portal/constants";
+import type { RouteIndexItem } from "@/lib/portal/types";
 
 interface SearchSectionProps {
   user: AuthUser;
+  routes: RouteIndexItem[];
 }
+
+const normalize = (text: string) => text.trim().replace(/\s+/g, " ").toLowerCase();
 
 function todayISO(): string {
   return new Date().toISOString().split("T")[0];
@@ -27,7 +30,7 @@ function buildGreeting(user: AuthUser, lastTripRoute: string | null): string {
   return `Welcome back ${firstName}! Kahan jaana hai aaj? 😊`;
 }
 
-export default function SearchSection({ user }: SearchSectionProps) {
+export default function SearchSection({ user, routes }: SearchSectionProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const lastTrip = getLastTrip();
@@ -41,10 +44,8 @@ export default function SearchSection({ user }: SearchSectionProps) {
     event.preventDefault();
     setNotice("");
 
-    const match = POPULAR_ROUTES.find(
-      (route) =>
-        route.from.toLowerCase() === from.trim().toLowerCase() &&
-        route.to.toLowerCase() === to.trim().toLowerCase()
+    const match = routes.find(
+      (route) => normalize(route.from) === normalize(from) && normalize(route.to) === normalize(to)
     );
 
     if (match) {
