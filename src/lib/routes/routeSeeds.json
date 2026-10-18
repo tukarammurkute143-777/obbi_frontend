@@ -291,6 +291,22 @@
   "Mumbai Darshan": {
    "lat": 18.922,
    "lon": 72.8347
+  },
+  "Lonar": {
+   "lat": 19.9764,
+   "lon": 76.5086
+  },
+  "Indore": {
+   "lat": 22.7196,
+   "lon": 75.8577
+  },
+  "Shirdi Airport": {
+   "lat": 19.6886,
+   "lon": 74.3789
+  },
+  "Nagpur Airport": {
+   "lat": 21.0922,
+   "lon": 79.0472
   }
  },
  "routes": [
@@ -1023,6 +1039,36 @@
    "Nagpur",
    "Ramtek",
    "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Tadoba",
+   "wildlife"
+  ],
+  [
+   "Pune",
+   "Lonar",
+   "pilgrimage"
+  ],
+  [
+   "Pune",
+   "Indore",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Shirdi Airport",
+   "airport"
+  ],
+  [
+   "Pune",
+   "Nagpur Airport",
+   "airport"
+  ],
+  [
+   "Nagpur",
+   "Nagpur Airport",
+   "airport"
   ]
  ],
  "circuits": {

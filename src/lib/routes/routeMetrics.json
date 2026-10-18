@@ -582,5 +582,29 @@
  "nagpur-to-ramtek": {
   "km": 49.9,
   "minutes": 41
+ },
+ "pune-to-tadoba": {
+  "km": 783.4,
+  "minutes": 576
+ },
+ "pune-to-lonar": {
+  "km": 373,
+  "minutes": 301
+ },
+ "pune-to-indore": {
+  "km": 603.9,
+  "minutes": 451
+ },
+ "mumbai-to-shirdi-airport": {
+  "km": 238.9,
+  "minutes": 181
+ },
+ "pune-to-nagpur-airport": {
+  "km": 685.5,
+  "minutes": 498
+ },
+ "nagpur-to-nagpur-airport": {
+  "km": 8.8,
+  "minutes": 12
  }
 }

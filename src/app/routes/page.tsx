@@ -10,7 +10,7 @@ import { getRouteImage } from "@/lib/imageService";
 export const metadata: Metadata = {
   title: "All Routes — Obii Cabs | Pilgrimage, Hill Station, Konkan & City Cab Routes",
   description:
-    "Explore 146+ Obii Cabs routes across Maharashtra — Shirdi, Trimbakeshwar, Pandharpur, Ashtavinayak, Mahabaleshwar, Lonavala, Konkan, Goa, airport transfers and more. Distance, driving time and top places for every route.",
+    "Explore 152+ Obii Cabs routes across Maharashtra — Shirdi, Trimbakeshwar, Pandharpur, Ashtavinayak, Mahabaleshwar, Lonavala, Konkan, Goa, airport transfers and more. Distance, driving time and top places for every route.",
   keywords:
     "maharashtra cab routes, pune to shirdi cab, ashtavinayak darshan cab, jyotirlinga cab maharashtra, mumbai cab routes, obii cabs routes, outstation cab maharashtra",
   alternates: {

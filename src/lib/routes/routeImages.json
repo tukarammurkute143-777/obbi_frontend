@@ -1130,5 +1130,29 @@
   "user": "Walkerssk",
   "pageUrl": "https://pixabay.com/photos/mumbai-bombs-gateway-to-india-india-1370023/",
   "query": "Navi Mumbai skyline India"
+ },
+ "pune-to-tadoba": {
+  "file": "/images/routes/pune-to-tadoba.jpg",
+  "alt": "pune to tadoba"
+ },
+ "pune-to-lonar": {
+  "file": "/images/routes/pune-to-lonar.jpg",
+  "alt": "pune to lonar"
+ },
+ "pune-to-indore": {
+  "file": "/images/routes/pune-to-indore.jpg",
+  "alt": "pune to indore"
+ },
+ "mumbai-to-shirdi-airport": {
+  "file": "/images/routes/mumbai-to-shirdi-airport.jpg",
+  "alt": "mumbai to shirdi airport"
+ },
+ "pune-to-nagpur-airport": {
+  "file": "/images/routes/pune-to-nagpur-airport.jpg",
+  "alt": "pune to nagpur airport"
+ },
+ "nagpur-to-nagpur-airport": {
+  "file": "/images/routes/nagpur-to-nagpur-airport.jpg",
+  "alt": "nagpur to nagpur airport"
  }
 }

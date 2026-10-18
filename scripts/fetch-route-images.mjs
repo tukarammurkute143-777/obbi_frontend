@@ -232,6 +232,7 @@ const FALLBACKS = {
   coastal: ["Konkan beach", "India beach", "Goa beach", "India fort sea", "Maharashtra coast", "India sunset beach", "Goa coast"],
   city: ["Maharashtra city", "Mumbai", "Pune city", "India highway", "Indian city skyline", "India road trip", "Maharashtra fort", "Mumbai skyline", "India city traffic"],
   airport: ["India airport", "airport terminal", "airplane India", "airport runway", "Mumbai airport", "airport lounge"],
+  wildlife: ["Tadoba tiger", "India tiger", "India jungle safari", "India wildlife", "Maharashtra forest"],
   other: ["Sahyadri mountains Maharashtra", "Western Ghats", "Maharashtra hills", "India mountains"],
 };
 

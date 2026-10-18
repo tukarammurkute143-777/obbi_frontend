@@ -1,7 +1,7 @@
 // Kept apart from allRoutes.ts so client components can use the category
 // labels without pulling the whole route dataset into the browser bundle.
 
-export type RouteCategory = "pilgrimage" | "hill_station" | "coastal" | "city" | "airport";
+export type RouteCategory = "pilgrimage" | "hill_station" | "coastal" | "city" | "airport" | "wildlife";
 
 export const CATEGORY_META: Record<RouteCategory, { label: string; emoji: string }> = {
   pilgrimage: { label: "Pilgrimage", emoji: "🛕" },
@@ -9,6 +9,7 @@ export const CATEGORY_META: Record<RouteCategory, { label: string; emoji: string
   coastal: { label: "Coastal", emoji: "🏖️" },
   city: { label: "City", emoji: "🏙️" },
   airport: { label: "Airport", emoji: "✈️" },
+  wildlife: { label: "Wildlife", emoji: "🐅" },
 };
 
 export const ROUTE_CATEGORIES: ("all" | RouteCategory)[] = [
@@ -18,4 +19,5 @@ export const ROUTE_CATEGORIES: ("all" | RouteCategory)[] = [
   "coastal",
   "city",
   "airport",
+  "wildlife",
 ];
