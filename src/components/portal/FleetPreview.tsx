@@ -39,13 +39,13 @@ export default function FleetPreview() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="w-64 shrink-0 snap-center rounded-2xl border border-border bg-glass p-6 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-[0_0_28px_rgba(201,168,76,0.22)] sm:w-auto"
             >
-              <div className="relative h-24 w-full overflow-hidden rounded-xl">
+              <div className="relative h-24 w-full overflow-hidden rounded-xl bg-gray-900">
                 <Image
                   src={vehicle.image}
                   alt={vehicle.name}
                   fill
                   sizes="256px"
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <h3 className="mt-3 font-display text-xl font-semibold text-text">
