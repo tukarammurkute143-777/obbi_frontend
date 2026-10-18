@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import SafarChat from "@/components/SafarChat";
 import FloatingButtons from "@/components/landing/FloatingButtons";
 import { AuthProvider } from "@/lib/auth/AuthContext";
 import "./globals.css";
@@ -65,6 +66,7 @@ export default function RootLayout({
         <AuthProvider>
           {children}
           <FloatingButtons />
+          <SafarChat />
         </AuthProvider>
       </body>
     </html>

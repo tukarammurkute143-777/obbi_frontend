@@ -73,4 +73,25 @@ export const api = {
   googleLogin: (token: string): Promise<ApiResult> => post("/api/auth/google", { token }),
 };
 
+/** The signed-in user's bookings. `status` is the HTTP status (0 when offline). */
+export async function getMyBookings(
+  token: string
+): Promise<{ ok: boolean; status: number; bookings: unknown[] }> {
+  try {
+    const res = await fetch(`${API_URL}/api/users/me/bookings`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (!res.ok) return { ok: false, status: res.status, bookings: [] };
+    const body: unknown = await res.json().catch(() => null);
+    const list = Array.isArray(body)
+      ? body
+      : Array.isArray((body as { bookings?: unknown } | null)?.bookings)
+        ? (body as { bookings: unknown[] }).bookings
+        : [];
+    return { ok: true, status: res.status, bookings: list };
+  } catch {
+    return { ok: false, status: 0, bookings: [] };
+  }
+}
+
 export { API_URL };
