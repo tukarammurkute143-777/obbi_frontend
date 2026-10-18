@@ -1,17 +1,3 @@
-export interface Vehicle {
-  name: string;
-  seats: number;
-  rating: number;
-  tag: string;
-  emoji: string;
-}
-
-export const VEHICLES: Vehicle[] = [
-  { name: "Innova Crysta", seats: 7, rating: 4.9, tag: "Most Popular", emoji: "🚙" },
-  { name: "Ertiga", seats: 6, rating: 4.8, tag: "Family Favourite", emoji: "🚗" },
-  { name: "Urbania", seats: 17, rating: 4.8, tag: "Group Trips", emoji: "🚐" },
-];
-
 export interface Review {
   name: string;
   rating: number;
