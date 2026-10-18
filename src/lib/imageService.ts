@@ -4,9 +4,6 @@
 //
 // A route without a downloaded photo gets the Sahyadri fallback photo, then the
 // route's own local image.
-//
-// Pixabay does not require attribution; the pages show a simple
-// "Photo from Pixabay" line (<PhotoCredit>) on every Pixabay photo.
 
 import manifest from "@/lib/routes/routeImages.json";
 
@@ -14,8 +11,6 @@ export interface RouteImage {
   /** Local path under /images/routes/. */
   url: string;
   alt: string;
-  /** True when the photo came from Pixabay, so the credit line is shown. */
-  fromPixabay: boolean;
 }
 
 interface ManifestEntry {
@@ -23,16 +18,14 @@ interface ManifestEntry {
   alt: string;
 }
 
-export const PIXABAY_HOME = "https://pixabay.com/";
-
 const entries = manifest as Record<string, ManifestEntry | undefined>;
 
 export function getRouteImage(slug: string, fallback: string, alt: string): RouteImage {
   const own = entries[slug];
-  if (own) return { url: own.file, alt, fromPixabay: true };
+  if (own) return { url: own.file, alt };
 
   const sahyadri = entries.fallback;
-  if (sahyadri) return { url: sahyadri.file, alt, fromPixabay: true };
+  if (sahyadri) return { url: sahyadri.file, alt };
 
-  return { url: fallback, alt, fromPixabay: false };
+  return { url: fallback, alt };
 }

@@ -3,7 +3,6 @@ import { Clock, MapPin, MessageCircle, Phone, Sun } from "lucide-react";
 import type { Route } from "@/lib/routes/allRoutes";
 import type { RouteImage } from "@/lib/imageService";
 import { routeWhatsappMessage, telHref, whatsappHref } from "@/lib/contactLinks";
-import PhotoCredit from "./PhotoCredit";
 
 interface RouteHeroProps {
   route: Pick<Route, "from" | "to" | "distance" | "duration" | "bestTime" | "highlights">;
@@ -25,11 +24,6 @@ export default function RouteHero({ route, image }: RouteHeroProps) {
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/70 to-dark/30" />
-
-      <PhotoCredit
-        show={image.fromPixabay}
-        className="absolute right-4 top-24 z-10 rounded-full bg-dark/60 px-3 py-1.5 backdrop-blur-sm sm:right-8"
-      />
 
       <div className="absolute inset-x-0 bottom-0">
         <div className="mx-auto max-w-6xl px-5 pb-7 sm:px-8 sm:pb-10">

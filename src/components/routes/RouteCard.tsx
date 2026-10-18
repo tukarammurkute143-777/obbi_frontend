@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Clock, MapPin } from "lucide-react";
 import { CATEGORY_META } from "@/lib/routes/categories";
-import PhotoCredit from "./PhotoCredit";
 import type { RouteListItem } from "./types";
 
 export default function RouteCard({ route }: { route: RouteListItem }) {
@@ -25,7 +24,6 @@ export default function RouteCard({ route }: { route: RouteListItem }) {
         <span className="absolute left-3 top-3 rounded-full border border-gold/40 bg-dark/70 px-2.5 py-1 font-body text-[11px] text-gold-light backdrop-blur-sm">
           {category.emoji} {category.label}
         </span>
-        <PhotoCredit show={image.fromPixabay} className="absolute bottom-2 right-3 z-10 max-w-[85%] text-right" />
       </div>
 
       <div className="flex flex-1 flex-col p-5">
