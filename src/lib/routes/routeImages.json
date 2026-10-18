@@ -1,19 +1,11 @@
 {
  "pune-to-shirdi": {
-  "id": 6874761,
-  "file": "/images/routes/pune-to-shirdi.jpg",
-  "alt": "baba, india, mandir, temple, hindu, praying, spritual, baba, baba, mandir, mandir, mandir, mandir, mandir, spritual, spritual, spritual, spritual, spritual",
-  "user": "SwastikArora",
-  "pageUrl": "https://pixabay.com/photos/baba-india-mandir-temple-hindu-6874761/",
-  "query": "Shirdi Sai Baba temple"
+  "file": "/images/routes/pune%20to%20shirdi.jpg",
+  "alt": "baba, india, mandir, temple, hindu, praying, spritual, baba, baba, mandir, mandir, mandir, mandir, mandir, spritual, spritual, spritual, spritual, spritual"
  },
  "pune-to-trimbakeshwar": {
-  "id": 6573632,
-  "file": "/images/routes/pune-to-trimbakeshwar.jpg",
-  "alt": "nature, field, outdoors, farmland, nashik, nashik, nashik, nashik, nashik, nashik",
-  "user": "ultimatebipin",
-  "pageUrl": "https://pixabay.com/photos/nature-field-outdoors-farmland-6573632/",
-  "query": "Trimbakeshwar temple Nashik"
+  "file": "/images/routes/pune%20to%20trimbakeshwar.jpg",
+  "alt": "nature, field, outdoors, farmland, nashik, nashik, nashik, nashik, nashik, nashik"
  },
  "pune-to-bhimashankar": {
   "id": 6708016,
