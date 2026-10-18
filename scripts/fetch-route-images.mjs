@@ -106,6 +106,7 @@ const QUERIES = {
   "pune-to-goa": "Goa beach sunset",
   "mumbai-to-goa": "Goa beach party India",
   // city to city
+  "pune-to-navi-mumbai": "Navi Mumbai skyline India",
   "pune-to-mumbai": "Mumbai Bandra Worli Sea Link",
   "pune-to-sambhajinagar": "Bibi Ka Maqbara Aurangabad",
   "pune-to-nagpur": "Nagpur city Maharashtra",
@@ -273,7 +274,8 @@ const todo = [];
 for (const job of jobs) {
   const index = startAt.get(job.query) ?? 0;
   startAt.set(job.query, index + 1);
-  const done = manifest[job.id] && existsSync(path.join(imageDir, job.file));
+  // The file may have another extension (a hand-added .webp), so trust the manifest.
+  const done = manifest[job.id] && existsSync(path.join(root, "public", decodeURIComponent(manifest[job.id].file)));
   if (!done) todo.push({ ...job, index });
 }
 console.log(`${jobs.length} routes, ${todo.length} still need a photo.`);

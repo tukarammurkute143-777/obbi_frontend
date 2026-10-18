@@ -1086,5 +1086,49 @@
   "user": "hari_mangayil",
   "pageUrl": "https://pixabay.com/photos/lord-shiva-shiv-hindu-god-statue-4045702/",
   "query": "Khandoba temple Maharashtra India pilgrimage"
+ },
+ "pune-to-karjat": {
+  "file": "/images/routes/pune-to-karjat.jpg",
+  "alt": "pune to karjat"
+ },
+ "pune-to-malvan": {
+  "file": "/images/routes/pune-to-malvan.jpg",
+  "alt": "pune to malvan"
+ },
+ "pune-to-vengurla": {
+  "file": "/images/routes/pune-to-vengurla.jpg",
+  "alt": "pune to vengurla"
+ },
+ "nagpur-to-nagpur-city": {
+  "file": "/images/routes/nagpur-to-nagpur-city.jpg",
+  "alt": "nagpur to nagpur city"
+ },
+ "pune-to-mumbai-darshan": {
+  "file": "/images/routes/pune-to-mumbai-darshan.jpg",
+  "alt": "pune to mumbai darshan"
+ },
+ "mumbai-to-hyderabad": {
+  "file": "/images/routes/mumbai-to-hyderabad.webp",
+  "alt": "mumbai to hyderabad"
+ },
+ "pune-to-hyderabad": {
+  "file": "/images/routes/pune-to-hyderabad.jpg",
+  "alt": "pune to hyderabad"
+ },
+ "kolhapur-to-nagpur": {
+  "file": "/images/routes/kolhapur-to-nagpur.jpg",
+  "alt": "kolhapur to nagpur"
+ },
+ "nagpur-to-ramtek": {
+  "file": "/images/routes/nagpur-to-ramtek.jpg",
+  "alt": "nagpur to ramtek"
+ },
+ "pune-to-navi-mumbai": {
+  "id": 1370023,
+  "file": "/images/routes/pune-to-navi-mumbai.jpg",
+  "alt": "mumbai, nature, bombs, gateway to india, india, ship, ships, the sea, port, architecture, the sky, clouds, hdr",
+  "user": "Walkerssk",
+  "pageUrl": "https://pixabay.com/photos/mumbai-bombs-gateway-to-india-india-1370023/",
+  "query": "Navi Mumbai skyline India"
  }
 }

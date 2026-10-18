@@ -8,7 +8,7 @@
   "minutes": 190
  },
  "pune-to-bhimashankar": {
-  "km": 111.0,
+  "km": 111,
   "minutes": 103
  },
  "pune-to-aundha-nagnath": {
@@ -112,11 +112,11 @@
   "minutes": 322
  },
  "mumbai-to-akkalkot": {
-  "km": 432.0,
+  "km": 432,
   "minutes": 322
  },
  "mumbai-to-saptashrungi": {
-  "km": 205.0,
+  "km": 205,
   "minutes": 154
  },
  "mumbai-to-shani-shingnapur": {
@@ -136,7 +136,7 @@
   "minutes": 66
  },
  "nashik-to-shani-shingnapur": {
-  "km": 143.0,
+  "km": 143,
   "minutes": 104
  },
  "nashik-to-saptashrungi": {
@@ -160,7 +160,7 @@
   "minutes": 77
  },
  "sambhajinagar-to-shani-shingnapur": {
-  "km": 89.0,
+  "km": 89,
   "minutes": 73
  },
  "sambhajinagar-to-ellora-caves": {
@@ -240,7 +240,7 @@
   "minutes": 89
  },
  "mumbai-to-bhandardara": {
-  "km": 164.0,
+  "km": 164,
   "minutes": 128
  },
  "mumbai-to-panchgani": {
@@ -272,11 +272,11 @@
   "minutes": 65
  },
  "pune-to-alibaug": {
-  "km": 140.0,
+  "km": 140,
   "minutes": 111
  },
  "pune-to-ratnagiri": {
-  "km": 311.0,
+  "km": 311,
   "minutes": 261
  },
  "pune-to-sindhudurg": {
@@ -284,11 +284,11 @@
   "minutes": 319
  },
  "pune-to-tarkarli": {
-  "km": 391.0,
+  "km": 391,
   "minutes": 325
  },
  "pune-to-dapoli": {
-  "km": 193.0,
+  "km": 193,
   "minutes": 175
  },
  "pune-to-murud-janjira": {
@@ -312,7 +312,7 @@
   "minutes": 75
  },
  "mumbai-to-tarkarli": {
-  "km": 483.0,
+  "km": 483,
   "minutes": 372
  },
  "mumbai-to-konkan-darshan": {
@@ -404,7 +404,7 @@
   "minutes": 120
  },
  "mumbai-to-nagpur": {
-  "km": 779.0,
+  "km": 779,
   "minutes": 536
  },
  "mumbai-to-kolhapur": {
@@ -412,7 +412,7 @@
   "minutes": 307
  },
  "mumbai-to-sambhajinagar": {
-  "km": 328.0,
+  "km": 328,
   "minutes": 229
  },
  "mumbai-to-surat": {
@@ -440,7 +440,7 @@
   "minutes": 173
  },
  "nashik-to-mumbai": {
-  "km": 167.0,
+  "km": 167,
   "minutes": 122
  },
  "nashik-to-sambhajinagar": {
@@ -524,7 +524,7 @@
   "minutes": 124
  },
  "nashik-to-pune-airport": {
-  "km": 210.0,
+  "km": 210,
   "minutes": 174
  },
  "sambhajinagar-to-pune-airport": {
@@ -542,5 +542,45 @@
  "satara-to-pune-airport": {
   "km": 120.8,
   "minutes": 115
+ },
+ "pune-to-navi-mumbai": {
+  "km": 125.8,
+  "minutes": 101
+ },
+ "pune-to-karjat": {
+  "km": 96.8,
+  "minutes": 81
+ },
+ "pune-to-malvan": {
+  "km": 388.7,
+  "minutes": 319
+ },
+ "pune-to-vengurla": {
+  "km": 395.6,
+  "minutes": 321
+ },
+ "nagpur-to-nagpur-city": {
+  "km": 3.5,
+  "minutes": 4
+ },
+ "pune-to-mumbai-darshan": {
+  "km": 154.3,
+  "minutes": 128
+ },
+ "mumbai-to-hyderabad": {
+  "km": 702.4,
+  "minutes": 524
+ },
+ "pune-to-hyderabad": {
+  "km": 559.1,
+  "minutes": 410
+ },
+ "kolhapur-to-nagpur": {
+  "km": 848.6,
+  "minutes": 607
+ },
+ "nagpur-to-ramtek": {
+  "km": 49.9,
+  "minutes": 41
  }
 }

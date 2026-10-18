@@ -263,6 +263,34 @@
   "Ranjangaon": {
    "lat": 18.787,
    "lon": 74.242
+  },
+  "Navi Mumbai": {
+   "lat": 19.033,
+   "lon": 73.0297
+  },
+  "Malvan": {
+   "lat": 16.0594,
+   "lon": 73.4633
+  },
+  "Vengurla": {
+   "lat": 15.861,
+   "lon": 73.635
+  },
+  "Hyderabad": {
+   "lat": 17.385,
+   "lon": 78.4867
+  },
+  "Ramtek": {
+   "lat": 21.3951,
+   "lon": 79.3265
+  },
+  "Nagpur City": {
+   "lat": 21.1259,
+   "lon": 79.0717
+  },
+  "Mumbai Darshan": {
+   "lat": 18.922,
+   "lon": 72.8347
   }
  },
  "routes": [
@@ -945,6 +973,56 @@
    "Satara",
    "Pune Airport",
    "airport"
+  ],
+  [
+   "Pune",
+   "Navi Mumbai",
+   "city"
+  ],
+  [
+   "Pune",
+   "Karjat",
+   "hill_station"
+  ],
+  [
+   "Pune",
+   "Malvan",
+   "coastal"
+  ],
+  [
+   "Pune",
+   "Vengurla",
+   "coastal"
+  ],
+  [
+   "Nagpur",
+   "Nagpur City",
+   "city"
+  ],
+  [
+   "Pune",
+   "Mumbai Darshan",
+   "city"
+  ],
+  [
+   "Mumbai",
+   "Hyderabad",
+   "city"
+  ],
+  [
+   "Pune",
+   "Hyderabad",
+   "city"
+  ],
+  [
+   "Kolhapur",
+   "Nagpur",
+   "city"
+  ],
+  [
+   "Nagpur",
+   "Ramtek",
+   "pilgrimage"
   ]
  ],
  "circuits": {

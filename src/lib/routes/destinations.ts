@@ -429,6 +429,57 @@ export const DESTINATIONS: Record<string, DestinationInfo> = {
     query: "Tadoba tiger reserve Maharashtra",
   },
 
+  // ───────────────────────── More destinations ─────────────────────────
+  "Navi Mumbai": {
+    blurb: "Navi Mumbai is a planned city across Thane Creek from Mumbai, with Vashi, Nerul, Belapur and Kharghar as its main nodes.",
+    highlights: ["Vashi", "Palm Beach Road", "Pandavkada Falls (Kharghar)", "Belapur Fort"],
+    bestTime: "October to March",
+    popularFor: "Mumbai-side drop-offs and business trips",
+    query: "Navi Mumbai skyline India",
+  },
+  Malvan: {
+    blurb: "Malvan is a Konkan coastal town in Sindhudurg district, known for Sindhudurg Fort, its beaches and Malvani food.",
+    highlights: ["Sindhudurg Fort", "Tarkarli Beach", "Chivla Beach", "Rock Garden"],
+    bestTime: "October to May",
+    popularFor: "Konkan beaches and sea fort",
+    query: "Malvan beach Sindhudurg Maharashtra",
+  },
+  Vengurla: {
+    blurb: "Vengurla is a quiet Konkan port town in Sindhudurg district, close to the Goa border, with uncrowded beaches.",
+    highlights: ["Vengurla Beach", "Sagareshwar Beach", "Mochemad Beach", "Vengurla Rocks"],
+    bestTime: "October to May",
+    popularFor: "Quiet Konkan beaches near Goa",
+    query: "Vengurla beach Konkan Maharashtra",
+  },
+  Hyderabad: {
+    blurb: "Hyderabad is the capital of Telangana, known for Charminar, Golconda Fort and Hussain Sagar lake.",
+    highlights: ["Charminar", "Golconda Fort", "Hussain Sagar", "Ramoji Film City"],
+    bestTime: "October to February",
+    popularFor: "Long-distance city trips",
+    query: "Hyderabad Charminar India",
+  },
+  Ramtek: {
+    blurb: "Ramtek, near Nagpur, is a hill town with the Ramtek Fort temples and a memorial to the poet Kalidas.",
+    highlights: ["Ramtek Fort Temple", "Kalidas Memorial", "Khindsi Lake", "Ambala Lake"],
+    bestTime: "October to March",
+    popularFor: "Temple day trip from Nagpur",
+    query: "Ramtek temple Nagpur Maharashtra",
+  },
+  "Nagpur City": {
+    blurb: "A local Nagpur city drive covering the Orange City's main sights, with pickup anywhere in town.",
+    highlights: ["Deekshabhoomi", "Zero Mile Stone", "Futala Lake", "Maharajbagh"],
+    bestTime: "October to February",
+    popularFor: "Local sightseeing and city transfers",
+    query: "Nagpur Deekshabhoomi Maharashtra",
+  },
+  "Mumbai Darshan": {
+    blurb: "A Mumbai sightseeing trip from Pune, covering the city's best-known landmarks in a day or more.",
+    highlights: ["Gateway of India", "Marine Drive", "Siddhivinayak Temple", "Haji Ali Dargah"],
+    bestTime: "October to March",
+    popularFor: "Mumbai sightseeing",
+    query: "Mumbai Gateway of India sightseeing",
+  },
+
   // ───────────────────────────── Airports ─────────────────────────────
   "Mumbai Airport": {
     blurb: "Chhatrapati Shivaji Maharaj International Airport (CSMIA) serves Mumbai, with Terminal 1 and Terminal 2.",
