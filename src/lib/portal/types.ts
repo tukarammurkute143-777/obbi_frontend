@@ -8,7 +8,8 @@ export interface Route {
 }
 
 export interface Vehicle {
-  emoji: string;
+  /** Path of the vehicle photo under /images/vehicles/. */
+  image: string;
   name: string;
   seats: number;
   rating: number;

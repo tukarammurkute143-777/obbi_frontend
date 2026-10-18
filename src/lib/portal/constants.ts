@@ -10,12 +10,12 @@ export const POPULAR_ROUTES: Route[] = [
 ];
 
 export const PORTAL_FLEET: Vehicle[] = [
-  { emoji: "🚗", name: "Dzire", seats: 4, rating: 4.7, features: ["AC", "Music"], category: "Economy" },
-  { emoji: "🚙", name: "Ertiga", seats: 6, rating: 4.8, features: ["AC", "Music", "Luggage"], category: "Comfort" },
-  { emoji: "🚐", name: "Innova Crysta", seats: 7, rating: 4.9, features: ["AC", "Music", "Luggage", "Premium"], category: "Premium" },
-  { emoji: "🚌", name: "Kia Carens", seats: 7, rating: 4.8, features: ["AC", "Music"], category: "Comfort" },
-  { emoji: "🚍", name: "Urbania", seats: 17, rating: 4.8, features: ["AC", "Music", "Luggage"], category: "Group" },
-  { emoji: "🚎", name: "Full Bus", seats: 50, rating: 4.8, features: ["AC", "Music"], category: "Corporate" },
+  { image: "/images/vehicles/dzire.jpg", name: "Dzire", seats: 4, rating: 4.7, features: ["AC", "Music"], category: "Economy" },
+  { image: "/images/vehicles/ertiga.jpg", name: "Ertiga", seats: 6, rating: 4.8, features: ["AC", "Music", "Luggage"], category: "Comfort" },
+  { image: "/images/vehicles/crysta.jpg", name: "Innova Crysta", seats: 7, rating: 4.9, features: ["AC", "Music", "Luggage", "Premium"], category: "Premium" },
+  { image: "/images/vehicles/carens.jpg", name: "Kia Carens", seats: 7, rating: 4.8, features: ["AC", "Music"], category: "Comfort" },
+  { image: "/images/vehicles/urbania.jpg", name: "Urbania", seats: 17, rating: 4.8, features: ["AC", "Music", "Luggage"], category: "Group" },
+  { image: "/images/vehicles/bus.jpg", name: "Full Bus", seats: 50, rating: 4.8, features: ["AC", "Music"], category: "Corporate" },
 ];
 
 export const MOCK_BOOKINGS: Booking[] = [];

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, Star } from "lucide-react";
 import { CONTACT } from "@/lib/constants";
@@ -38,7 +39,15 @@ export default function FleetPreview() {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="w-64 shrink-0 snap-center rounded-2xl border border-border bg-glass p-6 text-center backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-[0_0_28px_rgba(201,168,76,0.22)] sm:w-auto"
             >
-              <div className="text-6xl">{vehicle.emoji}</div>
+              <div className="relative h-24 w-full overflow-hidden rounded-xl">
+                <Image
+                  src={vehicle.image}
+                  alt={vehicle.name}
+                  fill
+                  sizes="256px"
+                  className="object-cover"
+                />
+              </div>
               <h3 className="mt-3 font-display text-xl font-semibold text-text">
                 {vehicle.name}
               </h3>
