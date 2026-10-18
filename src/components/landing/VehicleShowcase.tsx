@@ -79,10 +79,6 @@ export default function VehicleShowcase() {
             </motion.article>
           ))}
         </div>
-
-        <p className="mt-2 text-center font-body text-[11px] text-text-muted/70">
-          Vehicle photos from Pixabay. Actual vehicle model may vary.
-        </p>
       </div>
     </section>
   );
