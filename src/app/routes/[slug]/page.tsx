@@ -20,8 +20,7 @@ import {
   routeSeo,
   type Route,
 } from "@/lib/routes/allRoutes";
-import { getRouteBySlug as getLegacyRoute, type RouteVehicle } from "@/lib/routes/routesData";
-import { VEHICLES as FLEET } from "@/lib/fleet/constants";
+import { getRouteBySlug as getLegacyRoute } from "@/lib/routes/routesData";
 import { getRouteImage } from "@/lib/imageService";
 
 interface RoutePageProps {
@@ -34,22 +33,6 @@ export async function generateStaticParams() {
 
 function routeImage(route: Route) {
   return getRouteImage(route.slug, route.fallbackImage, `${route.from} to ${route.to} cab service`);
-}
-
-// Vehicle cards for routes without hand-written ones. Names come from the real
-// fleet list; there is no price on any card.
-function fleetCards(names: string[]): RouteVehicle[] {
-  return names.flatMap((name) => {
-    const v = FLEET.find((f) => f.name === name);
-    if (!v) return [];
-    return [
-      {
-        name: v.name,
-        emoji: v.emoji,
-        reason: `Seats up to ${v.seats} passengers. Good for ${v.bestFor.slice(0, 2).join(" and ").toLowerCase()}.`,
-      },
-    ];
-  });
 }
 
 export async function generateMetadata({ params }: RoutePageProps): Promise<Metadata> {
@@ -135,11 +118,7 @@ export default async function RoutePage({ params }: RoutePageProps) {
                 />
               )}
 
-              <AvailableVehicles
-                vehicles={legacy ? legacy.recommendedVehicles : fleetCards(route.vehicles)}
-                from={route.from}
-                to={route.to}
-              />
+              <AvailableVehicles from={route.from} to={route.to} />
 
               {legacy && (
                 <RouteReviews reviews={legacy.reviews} from={route.from} to={route.to} />
