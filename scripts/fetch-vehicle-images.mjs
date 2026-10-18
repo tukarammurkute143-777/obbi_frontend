@@ -29,14 +29,14 @@ function loadKey() {
 // Each query lists the tags a photo must have (any one of them). Specific
 // queries need the brand or model; the generic ones need the right body type.
 const VEHICLES = [
-  { id: "swift-dzire", queries: [["Maruti Swift Dzire car", ["dzire", "swift", "maruti", "suzuki"]], ["white sedan car", ["sedan"]], ["sedan car", ["sedan"]], ["Maruti Suzuki hatchback car", ["maruti", "suzuki", "hatchback"]], ["white compact car", ["compact", "hatchback", "sedan"]]] },
-  { id: "maruti-ertiga", queries: [["Maruti Ertiga MPV car", ["ertiga", "maruti", "suzuki"]], ["MPV car", ["mpv", "minivan", "people carrier"]], ["minivan car", ["mpv", "minivan", "people carrier"]]] },
-  { id: "innova-crysta", queries: [["Toyota Innova Crysta car", ["innova", "crysta"]], ["Toyota Innova", ["innova", "toyota"]], ["family van car", ["mpv", "minivan", "family car"]]] },
-  { id: "kia-carens", queries: [["Kia Carens car", ["carens"]], ["Kia MPV", ["kia"]], ["minivan family car", ["mpv", "minivan", "family car"]]] },
-  { id: "scorpio-n", queries: [["Mahindra Scorpio N car", ["scorpio", "mahindra"]], ["Mahindra SUV", ["mahindra"]], ["black SUV car", ["suv"]], ["SUV car", ["suv"]]] },
-  { id: "force-urbania", queries: [["Force Urbania van", ["urbania", "force"]], ["tempo traveller van", ["tempo", "traveller", "traveler"]], ["minibus van", ["minibus", "mini bus", "van"]]] },
-  { id: "mini-bus", queries: [["mini bus India", ["minibus", "mini bus"]], ["minibus", ["minibus", "mini bus"]], ["small bus", ["minibus", "mini bus", "bus"]]] },
-  { id: "full-bus", queries: [["luxury coach bus", ["coach", "bus"]], ["tourist bus", ["bus", "coach"]], ["luxury bus India", ["bus", "coach"]]] },
+  { id: "dzire", queries: [["Maruti Swift Dzire car", ["dzire", "swift", "maruti", "suzuki"]], ["white sedan car", ["sedan"]], ["sedan car", ["sedan"]], ["Maruti Suzuki hatchback car", ["maruti", "suzuki", "hatchback"]], ["white compact car", ["compact", "hatchback", "sedan"]]] },
+  { id: "ertiga", queries: [["Maruti Ertiga MPV car", ["ertiga", "maruti", "suzuki"]], ["MPV car", ["mpv", "minivan", "people carrier"]], ["minivan car", ["mpv", "minivan", "people carrier"]]] },
+  { id: "crysta", queries: [["Toyota Innova Crysta car", ["innova", "crysta"]], ["Toyota Innova", ["innova", "toyota"]], ["family van car", ["mpv", "minivan", "family car"]]] },
+  { id: "carens", queries: [["Kia Carens car", ["carens"]], ["Kia MPV", ["kia"]], ["minivan family car", ["mpv", "minivan", "family car"]]] },
+  { id: "scorpio", queries: [["Mahindra Scorpio N car", ["scorpio", "mahindra"]], ["Mahindra SUV", ["mahindra"]], ["black SUV car", ["suv"]], ["SUV car", ["suv"]]] },
+  { id: "urbania", queries: [["Force Urbania van", ["urbania", "force"]], ["tempo traveller van", ["tempo", "traveller", "traveler"]], ["minibus van", ["minibus", "mini bus", "van"]]] },
+  { id: "bus", queries: [["mini bus India", ["minibus", "mini bus"]], ["minibus", ["minibus", "mini bus"]], ["small bus", ["minibus", "mini bus", "bus"]]] },
+  { id: "coach", queries: [["luxury coach bus", ["coach", "bus"]], ["tourist bus", ["bus", "coach"]], ["luxury bus India", ["bus", "coach"]]] },
 ];
 
 // Tags that mean the photo is about something else (toys, old or sports cars,
